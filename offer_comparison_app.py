@@ -14,6 +14,7 @@ def main():
 
     logo_container = st.container()
     disclaimer_container = st.container()
+    password_container = st.container()
     description_container = st.container()
     instruction_container = st.container()
     intro_info_container = st.container()
@@ -35,6 +36,11 @@ def main():
     with disclaimer_container:
         with st.expander('DISCLOSURES'):
             st.markdown(' *disclaimer text*')
+
+    with password_container:
+        password_guess = st.text_input('Enter a password to gain access to this app', key='password_guess')
+        if password_guess != st.secrets['password']:
+            st.stop()
 
     with description_container:
         with st.expander('App Description'):
@@ -394,7 +400,7 @@ def main():
                 #     st.slider('Estimated cost ($) of the second additional entry', 0.0, 25000.0, step=10.0, key='offer_3_other_fee_amt_2')
                 offer_3_submit = st.form_submit_button('Submit Offer 3\'s Information', on_click=update_offer_3_info_form)
 
-    st.write(st.session_state)
+    # st.write(st.session_state)
 
     offer_comparison_form = comparison_inputs_to_excel(
         agent=st.session_state.preparer,
