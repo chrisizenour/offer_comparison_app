@@ -35,7 +35,10 @@ def main():
 
     with disclaimer_container:
         with st.expander('DISCLOSURES'):
-            st.markdown(' *disclaimer text*')
+            st.markdown(
+                '''
+                *These estimates are not guaranteed and may not include escrows. Escrow balances are reimbursed by the existing lender. Taxes, rents & association dues are pro-rated at settlement. Under Virginia Law, the seller's proceeds may not be available for up to 2 business days following recording of the deed. Seller acknowledges receipt of this statement.*
+                ''')
 
     with password_container:
         password_guess = st.text_input('Enter a password to gain access to this app', key='password_guess')
