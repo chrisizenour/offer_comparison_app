@@ -59,7 +59,21 @@ def main():
         with st.expander('App Instructions'):
             st.markdown(
                 '''
-                instructions
+                This application is built into separate data input forms\n
+                - Form Introduction Data
+                    - Enter the name of the agent preparing the offer comparison, the date the comparison is being created, and the number of offers being compared
+                    - Press the 'Submit Information' button
+                - Property Data Form
+                    - Enter data related to the property being offered for sale
+                    - Press the 'Submit Property Information' button
+                - Common Data Form
+                    - Enter data that is common to all offers for the property
+                    - Press the 'Submit Common Information' button
+                - Offers 1 thru n Form
+                    - For each offer being compared, enter data related to that particular Offer in that Offer's Form
+                    - Press the 'Submit Offer (n)'s Information' button
+                - After all data has been updated/entered and then submitted in their respective forms, the MS Excel comparison form can be created
+                - Press the 'Download Offer Comparison Form' button to generate and download the MS Excel workbook
                 '''
             )
 
