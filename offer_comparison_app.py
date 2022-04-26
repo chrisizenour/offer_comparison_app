@@ -243,7 +243,7 @@ def main():
 
 
     with intro_info_container:
-        with st.expander('Form Introduction Data'):
+        with st.expander('Introduction Data Form'):
             with st.form(key='intro_info_form'):
                 st.markdown('##### **Enter Top-Level Form Data**')
                 intro_info_col1, intro_info_col2 = st.columns(2)
@@ -255,7 +255,7 @@ def main():
                 intro_info_submit = st.form_submit_button('Submit Information', on_click=update_intro_info_form)
 
     with property_container:
-        with st.expander('Property Data'):
+        with st.expander('Property Data Form'):
             with st.form(key='property_info_form'):
                 st.markdown('##### **Enter Property-Related Data**')
                 property_info_col1, property_info_col2 = st.columns(2)
@@ -271,7 +271,7 @@ def main():
                 property_info_submit = st.form_submit_button('Submit Property Information', on_click=update_property_info_form)
 
     with common_container:
-        with st.expander('Common Data'):
+        with st.expander('Common Data Form'):
             with st.form(key='common_info_form'):
                 st.markdown('##### **Enter Information Common To All Offers**')
                 brokerage_col, closing_cost_col, misc_col = st.columns(3)
@@ -297,7 +297,7 @@ def main():
                 common_info_submit = st.form_submit_button('Submit Common Information', on_click=update_common_info_form)
 
     with offer_1_container:
-        with st.expander('Offer 1'):
+        with st.expander('Offer 1 Form'):
             with st.form(key='offer_1_info_form'):
                 st.markdown('##### **Enter Offer 1\'s Information**')
                 offer_1_col1, offer_1_col2 = st.columns(2)
@@ -338,7 +338,7 @@ def main():
 
 
     with offer_2_container:
-        with st.expander('Offer 2'):
+        with st.expander('Offer 2 Form'):
             with st.form(key='offer_2_info_form'):
                 st.markdown('##### **Enter Offer 2\'s Information**')
                 offer_2_col1, offer_2_col2 = st.columns(2)
@@ -378,7 +378,7 @@ def main():
                 offer_2_submit = st.form_submit_button('Submit Offer 2\'s Information', on_click=update_offer_2_info_form)
 
     with offer_3_container:
-        with st.expander('Offer 3'):
+        with st.expander('Offer 3 Form'):
             with st.form(key='offer_3_info_form'):
                 st.markdown('##### **Enter Offer 3\'s Information**')
                 offer_3_col1, offer_3_col2 = st.columns(2)
