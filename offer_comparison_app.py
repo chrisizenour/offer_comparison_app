@@ -417,7 +417,7 @@ def main():
                 #     st.slider('Estimated cost ($) of the second additional entry', 0.0, 25000.0, step=10.0, key='offer_3_other_fee_amt_2')
                 offer_3_submit = st.form_submit_button('Submit Offer 3\'s Information', on_click=update_offer_3_info_form)
 
-    # st.write(st.session_state)
+    st.write(st.session_state)
 
     offer_comparison_form = comparison_inputs_to_excel(
         agent=st.session_state.preparer,
