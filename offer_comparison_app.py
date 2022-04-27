@@ -135,7 +135,7 @@ def main():
         # st.session_state['offer_1_other_fee_name_2'] = ''
         # st.session_state['offer_1_other_fee_amt_2'] = 0.0
 
-        st.session_state['offer_2_name'] = 'Offer 3'
+        st.session_state['offer_2_name'] = 'Offer 2'
         st.session_state['offer_2_settlement_date'] = date.today()
         # st.session_state['update_offer_2_settlement_date'] = date.today()
         st.session_state['offer_2_settlement_company'] = ''
