@@ -798,6 +798,7 @@ def main():
         offer_1_financing_type=st.session_state.offer_1_finance_type,
         offer_1_home_inspection_check=st.session_state.offer_1_home_inspection_value,
         offer_1_home_inspection_days=st.session_state.offer_1_home_inspection_days_string,
+        offer_1_radon_inspection_check=st.session_state.offer_1_radon_inspection_value,
         offer_1_radon_inspection_days=st.session_state.offer_1_radon_inspection_days_string,
         offer_1_septic_inspection_check=st.session_state.offer_1_septic_inspection_value,
         offer_1_septic_inspection_days=st.session_state.offer_1_septic_inspection_days_string,
