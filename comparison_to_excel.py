@@ -117,7 +117,8 @@ def comparison_inputs_to_excel(
         offer_3_post_occupancy_date,
         offer_3_closing_cost_subsidy_amt,
         offer_3_pre_occupancy_credit_amt,
-        offer_3_post_occupancy_cost_amt,):
+        offer_3_post_occupancy_cost_amt,
+):
 
     wb = Workbook()
     dest_filename = f"offer_comparison_form_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
