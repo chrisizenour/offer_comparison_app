@@ -89,7 +89,6 @@ def main():
         st.session_state['payoff_amt_first_trust'] = 0
         st.session_state['payoff_amt_second_trust'] = 0
         st.session_state['annual_tax_amt'] = 0
-        st.session_state['update_annual_tax_amt'] = 0
         st.session_state['prorated_annual_tax_amt'] = 0.0
         st.session_state['annual_hoa_condo_fee_amt'] = 0
         st.session_state['update_annual_hoa_condo_fee_amt'] = 0
@@ -270,7 +269,7 @@ def main():
 
 
     def update_property_info_form():
-        st.session_state.prorated_annual_tax_amt = st.session_state.update_annual_tax_amt / 12 * 3
+        st.session_state.prorated_annual_tax_amt = st.session_state.annual_tax_amt / 12 * 3
         st.session_state.prorated_annual_hoa_condo_fee_amt = st.session_state.update_annual_hoa_condo_fee_amt / 12 * 3
 
 
@@ -564,7 +563,7 @@ def main():
                 with property_info_col2:
                     st.slider('Estimated Payoff - First Trust ($)', 0, 1000000, step=1000, key='payoff_amt_first_trust')
                     st.slider('Estimated Payoff - Second Trust ($)', 0, 1000000, step=1000, key='payoff_amt_second_trust')
-                    st.slider('Estimated Annual Tax Amount ($)', 0, 25000, step=1, key='update_annual_tax_amt')
+                    st.slider('Estimated Annual Tax Amount ($)', 0, 25000, step=1, key='annual_tax_amt')
                     st.slider('Estimated Annual HOA / Condo Fee Amount ($)', 0, 10000, step=1, key='update_annual_hoa_condo_fee_amt')
                 property_info_submit = st.form_submit_button('Submit Property Information', on_click=update_property_info_form)
 
