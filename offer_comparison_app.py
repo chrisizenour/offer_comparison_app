@@ -283,9 +283,10 @@ def main():
     def days_int_to_string(x):
         if x == 0:
             string_value = ''
-        elif x > 0:
-            string_value = x
         return string_value
+
+    def days_int_to_string_false(x):
+        pass
 
 
     def update_offer_1_info_form():
@@ -301,7 +302,7 @@ def main():
         if st.session_state.offer_1_home_inspection_check:
             st.session_state.offer_1_home_inspection_value = 'Y'
             st.session_state.offer_1_home_inspection_days = st.session_state.offer_1_home_inspection_days
-            st.session_state.offer_1_home_inspection_days_string = days_int_to_string(st.session_state.offer_1_home_inspection_days)
+            st.session_state.offer_1_home_inspection_days_string = st.session_state.offer_1_home_inspection_days
         else:
             st.session_state.offer_1_home_inspection_value = ''
             st.session_state.offer_1_home_inspection_days = 0
@@ -310,7 +311,7 @@ def main():
         if st.session_state.offer_1_radon_inspection_check:
             st.session_state.offer_1_radon_inspection_value = 'Y'
             st.session_state.offer_1_radon_inspection_days = st.session_state.offer_1_radon_inspection_days
-            st.session_state.offer_1_radon_inspection_days_string = days_int_to_string(st.session_state.offer_1_radon_inspection_days)
+            st.session_state.offer_1_radon_inspection_days_string = st.session_state.offer_1_radon_inspection_days
         else:
             st.session_state.offer_1_radon_inspection_value = ''
             st.session_state.offer_1_radon_inspection_days = 0
@@ -319,7 +320,7 @@ def main():
         if st.session_state.offer_1_septic_inspection_check:
             st.session_state.offer_1_septic_inspection_value = 'Y'
             st.session_state.offer_1_septic_inspection_days = st.session_state.offer_1_septic_inspection_days
-            st.session_state.offer_1_septic_inspection_days_string = days_int_to_string(st.session_state.offer_1_septic_inspection_days)
+            st.session_state.offer_1_septic_inspection_days_string = st.session_state.offer_1_septic_inspection_days
         else:
             st.session_state.offer_1_septic_inspection_value = ''
             st.session_state.offer_1_septic_inspection_days = 0
@@ -328,7 +329,7 @@ def main():
         if st.session_state.offer_1_well_inspection_check:
             st.session_state.offer_1_well_inspection_value = 'Y'
             st.session_state.offer_1_well_inspection_days = st.session_state.offer_1_well_inspection_days
-            st.session_state.offer_1_well_inspection_days_string = days_int_to_string(st.session_state.offer_1_well_inspection_days)
+            st.session_state.offer_1_well_inspection_days_string = st.session_state.offer_1_well_inspection_days
         else:
             st.session_state.offer_1_well_inspection_value = ''
             st.session_state.offer_1_well_inspection_days = 0
@@ -337,7 +338,7 @@ def main():
         if st.session_state.offer_1_financing_contingency_check:
             st.session_state.offer_1_financing_contingency_value = 'Y'
             st.session_state.offer_1_financing_contingency_days = st.session_state.offer_1_financing_contingency_days
-            st.session_state.offer_1_financing_contingency_days_string = days_int_to_string(st.session_state.offer_1_financing_contingency_days)
+            st.session_state.offer_1_financing_contingency_days_string = st.session_state.offer_1_financing_contingency_days
         else:
             st.session_state.offer_1_financing_contingency_value = ''
             st.session_state.offer_1_financing_contingency_days = 0
@@ -346,7 +347,7 @@ def main():
         if st.session_state.offer_1_appraisal_contingency_check:
             st.session_state.offer_1_appraisal_contingency_value = 'Y'
             st.session_state.offer_1_appraisal_contingency_days = st.session_state.offer_1_appraisal_contingency_days
-            st.session_state.offer_1_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_1_appraisal_contingency_days)
+            st.session_state.offer_1_appraisal_contingency_days_string = st.session_state.offer_1_appraisal_contingency_days
         else:
             st.session_state.offer_1_appraisal_contingency_value = ''
             st.session_state.offer_1_appraisal_contingency_days = 0
@@ -355,7 +356,7 @@ def main():
         if st.session_state.offer_1_home_sale_contingency_check:
             st.session_state.offer_1_home_sale_contingency_value = 'Y'
             st.session_state.offer_1_home_sale_contingency_days = st.session_state.offer_1_home_inspection_days
-            st.session_state.offer_1_home_sale_contingency_days_string = days_int_to_string(st.session_state.offer_1_home_sale_contingency_days)
+            st.session_state.offer_1_home_sale_contingency_days_string = st.session_state.offer_1_home_sale_contingency_days
         else:
             st.session_state.offer_1_home_sale_contingency_value = ''
             st.session_state.offer_1_home_sale_contingency_days = 0
@@ -385,7 +386,7 @@ def main():
         if st.session_state.offer_2_home_inspection_check:
             st.session_state.offer_2_home_inspection_value = 'Y'
             st.session_state.offer_2_home_inspection_days = st.session_state.offer_2_home_inspection_days
-            st.session_state.offer_2_home_inspection_days_string = days_int_to_string(st.session_state.offer_2_home_inspection_days)
+            st.session_state.offer_2_home_inspection_days_string = st.session_state.offer_2_home_inspection_days
         else:
             st.session_state.offer_2_home_inspection_value = ''
             st.session_state.offer_2_home_inspection_days = 0
@@ -394,7 +395,7 @@ def main():
         if st.session_state.offer_2_radon_inspection_check:
             st.session_state.offer_2_radon_inspection_value = 'Y'
             st.session_state.offer_2_radon_inspection_days = st.session_state.offer_2_radon_inspection_days
-            st.session_state.offer_2_radon_inspection_days_string = days_int_to_string(st.session_state.offer_2_radon_inspection_days)
+            st.session_state.offer_2_radon_inspection_days_string = st.session_state.offer_2_radon_inspection_days
         else:
             st.session_state.offer_2_radon_inspection_value = ''
             st.session_state.offer_2_radon_inspection_days = 0
@@ -403,7 +404,7 @@ def main():
         if st.session_state.offer_2_septic_inspection_check:
             st.session_state.offer_2_septic_inspection_value = 'Y'
             st.session_state.offer_2_septic_inspection_days = st.session_state.offer_2_septic_inspection_days
-            st.session_state.offer_2_septic_inspection_days_string = days_int_to_string(st.session_state.offer_2_septic_inspection_days)
+            st.session_state.offer_2_septic_inspection_days_string = st.session_state.offer_2_septic_inspection_days
         else:
             st.session_state.offer_2_septic_inspection_value = ''
             st.session_state.offer_2_septic_inspection_days = 0
@@ -412,7 +413,7 @@ def main():
         if st.session_state.offer_2_well_inspection_check:
             st.session_state.offer_2_well_inspection_value = 'Y'
             st.session_state.offer_2_well_inspection_days = st.session_state.offer_2_well_inspection_days
-            st.session_state.offer_2_well_inspection_days_string = days_int_to_string(st.session_state.offer_2_well_inspection_days)
+            st.session_state.offer_2_well_inspection_days_string = st.session_state.offer_2_well_inspection_days
         else:
             st.session_state.offer_2_well_inspection_value = ''
             st.session_state.offer_2_well_inspection_days = 0
@@ -421,7 +422,7 @@ def main():
         if st.session_state.offer_2_financing_contingency_check:
             st.session_state.offer_2_financing_contingency_value = 'Y'
             st.session_state.offer_2_financing_contingency_days = st.session_state.offer_2_financing_contingency_days
-            st.session_state.offer_2_financing_contingency_days_string = days_int_to_string(st.session_state.offer_2_financing_contingency_days)
+            st.session_state.offer_2_financing_contingency_days_string = st.session_state.offer_2_financing_contingency_days
         else:
             st.session_state.offer_2_financing_contingency_value = ''
             st.session_state.offer_2_financing_contingency_days = 0
@@ -430,7 +431,7 @@ def main():
         if st.session_state.offer_2_appraisal_contingency_check:
             st.session_state.offer_2_appraisal_contingency_value = 'Y'
             st.session_state.offer_2_appraisal_contingency_days = st.session_state.offer_2_appraisal_contingency_days
-            st.session_state.offer_2_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_2_appraisal_contingency_days)
+            st.session_state.offer_2_appraisal_contingency_days_string = st.session_state.offer_2_appraisal_contingency_days
         else:
             st.session_state.offer_2_appraisal_contingency_value = ''
             st.session_state.offer_2_appraisal_contingency_days = 0
@@ -439,7 +440,7 @@ def main():
         if st.session_state.offer_2_home_sale_contingency_check:
             st.session_state.offer_2_home_sale_contingency_value = 'Y'
             st.session_state.offer_2_home_sale_contingency_days = st.session_state.offer_2_home_inspection_days
-            st.session_state.offer_2_home_sale_contingency_days_string = days_int_to_string(st.session_state.offer_2_home_sale_contingency_days)
+            st.session_state.offer_2_home_sale_contingency_days_string = st.session_state.offer_2_home_sale_contingency_days
         else:
             st.session_state.offer_2_home_sale_contingency_value = ''
             st.session_state.offer_2_home_sale_contingency_days = 0
@@ -468,7 +469,7 @@ def main():
         if st.session_state.offer_3_home_inspection_check:
             st.session_state.offer_3_home_inspection_value = 'Y'
             st.session_state.offer_3_home_inspection_days = st.session_state.offer_3_home_inspection_days
-            st.session_state.offer_3_home_inspection_days_string = days_int_to_string(st.session_state.offer_3_home_inspection_days)
+            st.session_state.offer_3_home_inspection_days_string = st.session_state.offer_3_home_inspection_days
         else:
             st.session_state.offer_3_home_inspection_value = ''
             st.session_state.offer_3_home_inspection_days = 0
@@ -477,7 +478,7 @@ def main():
         if st.session_state.offer_3_radon_inspection_check:
             st.session_state.offer_3_radon_inspection_value = 'Y'
             st.session_state.offer_3_radon_inspection_days = st.session_state.offer_3_radon_inspection_days
-            st.session_state.offer_3_radon_inspection_days_string = days_int_to_string(st.session_state.offer_3_radon_inspection_days)
+            st.session_state.offer_3_radon_inspection_days_string =st.session_state.offer_3_radon_inspection_days
         else:
             st.session_state.offer_3_radon_inspection_value = ''
             st.session_state.offer_3_radon_inspection_days = 0
@@ -486,7 +487,7 @@ def main():
         if st.session_state.offer_3_septic_inspection_check:
             st.session_state.offer_3_septic_inspection_value = 'Y'
             st.session_state.offer_3_septic_inspection_days = st.session_state.offer_3_septic_inspection_days
-            st.session_state.offer_3_septic_inspection_days_string = days_int_to_string(st.session_state.offer_3_septic_inspection_days)
+            st.session_state.offer_3_septic_inspection_days_string = st.session_state.offer_3_septic_inspection_days
         else:
             st.session_state.offer_3_septic_inspection_value = ''
             st.session_state.offer_3_septic_inspection_days = 0
@@ -495,7 +496,7 @@ def main():
         if st.session_state.offer_3_well_inspection_check:
             st.session_state.offer_3_well_inspection_value = 'Y'
             st.session_state.offer_3_well_inspection_days = st.session_state.offer_3_well_inspection_days
-            st.session_state.offer_3_well_inspection_days_string = days_int_to_string(st.session_state.offer_3_well_inspection_days)
+            st.session_state.offer_3_well_inspection_days_string = st.session_state.offer_3_well_inspection_days
         else:
             st.session_state.offer_3_well_inspection_value = ''
             st.session_state.offer_3_well_inspection_days = 0
@@ -504,7 +505,7 @@ def main():
         if st.session_state.offer_3_financing_contingency_check:
             st.session_state.offer_3_financing_contingency_value = 'Y'
             st.session_state.offer_3_financing_contingency_days = st.session_state.offer_3_financing_contingency_days
-            st.session_state.offer_3_financing_contingency_days_string = days_int_to_string(st.session_state.offer_3_financing_contingency_days)
+            st.session_state.offer_3_financing_contingency_days_string = st.session_state.offer_3_financing_contingency_days
         else:
             st.session_state.offer_3_financing_contingency_value = ''
             st.session_state.offer_3_financing_contingency_days = 0
@@ -513,7 +514,7 @@ def main():
         if st.session_state.offer_3_appraisal_contingency_check:
             st.session_state.offer_3_appraisal_contingency_value = 'Y'
             st.session_state.offer_3_appraisal_contingency_days = st.session_state.offer_3_appraisal_contingency_days
-            st.session_state.offer_3_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_3_appraisal_contingency_days)
+            st.session_state.offer_3_appraisal_contingency_days_string = st.session_state.offer_3_appraisal_contingency_days
         else:
             st.session_state.offer_3_appraisal_contingency_value = ''
             st.session_state.offer_3_appraisal_contingency_days = 0
@@ -522,7 +523,7 @@ def main():
         if st.session_state.offer_3_home_sale_contingency_check:
             st.session_state.offer_3_home_sale_contingency_value = "Y"
             st.session_state.offer_3_home_sale_contingency_days = st.session_state.offer_3_home_inspection_days
-            st.session_state.offer_3_home_sale_contingency_days_string = days_int_to_string(st.session_state.offer_3_home_sale_contingency_days)
+            st.session_state.offer_3_home_sale_contingency_days_string = st.session_state.offer_3_home_sale_contingency_days
         else:
             st.session_state.offer_3_home_sale_contingency_value = ''
             st.session_state.offer_3_home_sale_contingency_days = 0
