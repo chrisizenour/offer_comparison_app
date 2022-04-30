@@ -60,6 +60,9 @@ def main():
             st.markdown(
                 '''
                 This application is built into separate data input forms\n
+                To ensure the form is populating correctly, open the Common Data form first to check to see that the 'selling company compensation %' and 'listing_company_compensation %' sliders are at the 2.5% position\n
+                If the sliders are not initialized at these positions, refresh the entire webpage, re-enter the password and again check the slider positions\n
+                Sometimes the webpage doesn't load correctly, so a refresh is required\n
                 - Form Introduction Data
                     - Enter the name of the agent preparing the offer comparison, the date the comparison is being created, and the number of offers being compared
                     - Press the 'Submit Information' button
