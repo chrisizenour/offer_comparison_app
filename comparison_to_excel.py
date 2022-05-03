@@ -125,11 +125,17 @@ def comparison_inputs_to_excel(
 
     ws1 = wb.active
     ws1.title = 'offer_comparison'
-    ws1.print_area = 'B2:H77'
-    ws1.set_printer_settings(paper_size=1, orientation='landscape')
-    # ws1.print_options.horizontalCentered = True
-    # ws1.print_options.verticalCentered = True
+    ws1.print_area = 'B2:H75'
+    ws1.set_printer_settings(paper_size=1, orientation='portrait')
+
+    ws1.page_margins.top = 0.5
+    ws1.page_margins.bottom = 0.5
+    ws1.page_margins.left = 0.5
+    ws1.page_margins.right = 0.5
     ws1.sheet_properties.pageSetUpPr.fitToPage = True
+    ws1.print_options.horizontalCentered = True
+    ws1.print_options.verticalCentered = True
+
 
     white_fill = '00FFFFFF'
     yellow_fill = '00FFFF00'
@@ -160,15 +166,15 @@ def comparison_inputs_to_excel(
     top_left_border_one = ws1['A1']
     top_left_border_one.fill = PatternFill('solid', fgColor=black_fill)
 
-    ws1.merge_cells('A2:A78')
+    ws1.merge_cells('A2:A76')
     top_left_border_two = ws1['A2']
     top_left_border_two.fill = PatternFill('solid', fgColor=black_fill)
 
-    ws1.merge_cells('B78:I78')
-    top_left_border_three = ws1['B78']
+    ws1.merge_cells('B76:I76')
+    top_left_border_three = ws1['B76']
     top_left_border_three.fill = PatternFill('solid', fgColor=black_fill)
 
-    ws1.merge_cells('I2:I77')
+    ws1.merge_cells('I2:I75')
     top_left_border_four = ws1['I2']
     top_left_border_four.fill = PatternFill('solid', fgColor=black_fill)
 
@@ -1429,7 +1435,7 @@ def comparison_inputs_to_excel(
     ws1.add_image(freedom_logo)
 
     # Disclosure Statement
-    ws1.merge_cells('C70:G76')
+    ws1.merge_cells('C70:G74')
     top_left_cell_eight = ws1['C70']
     top_left_cell_eight.value = '''These estimates are not guaranteed and may not include escrows. Escrow balances are reimbursed by the existing lender. Taxes, rents & association dues are pro-rated at settlement. Under Virginia Law, the seller's proceeds may not be available for up to 2 business days following recording of the deed. Seller acknowledges receipt of this statement.'''
     top_left_cell_eight.font = Font(italic=True)

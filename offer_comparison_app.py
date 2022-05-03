@@ -98,22 +98,31 @@ def main():
         st.session_state['prorated_annual_hoa_condo_fee_amt'] = 0.0
 
         st.session_state['update_listing_company_pct'] = 2.5
-        st.session_state['listing_company_pct'] = 0.025
+        st.session_state['listing_company_pct'] = 0.0
         st.session_state['update_selling_company_pct'] = 2.5
-        st.session_state['selling_company_pct'] = 0.025
+        st.session_state['selling_company_pct'] = 0.0
+        st.session_state['update_processing_fee'] = 0
         st.session_state['processing_fee'] = 0
-        st.session_state['settlement_fee'] = 450
-        st.session_state['deed_preparation_fee'] = 150
-        st.session_state['lien_trust_release_fee'] = 100
-        st.session_state['lien_trust_release_qty'] = 1
-        st.session_state['recording_release_fee'] = 38
-        st.session_state['recording_release_qty'] = 1
+        st.session_state['update_settlement_fee'] = 450
+        st.session_state['settlement_fee'] = 0
+        st.session_state['update_deed_preparation_fee'] = 150
+        st.session_state['deed_preparation_fee'] = 0
+        st.session_state['update_lien_trust_release_fee'] = 100
+        st.session_state['lien_trust_release_fee'] = 0
+        st.session_state['update_lien_trust_release_qty'] = 1
+        st.session_state['lien_trust_release_qty'] = 0
+        st.session_state['update_recording_release_fee'] = 38
+        st.session_state['recording_release_fee'] = 0
+        st.session_state['update_recording_release_qty'] = 1
+        st.session_state['recording_release_qty'] = 0
         st.session_state['update_grantors_tax_pct'] = 0.1
-        st.session_state['grantors_tax_pct'] = 0.001
+        st.session_state['grantors_tax_pct'] = 0.0
         st.session_state['update_congestion_tax_pct'] = 0.2
-        st.session_state['congestion_tax_pct'] = 0.002
-        st.session_state['pest_inspection_fee'] = 50
-        st.session_state['poa_condo_disclosure_fee'] = 350
+        st.session_state['congestion_tax_pct'] = 0.0
+        st.session_state['update_pest_inspection_fee'] = 50
+        st.session_state['pest_inspection_fee'] = 0
+        st.session_state['update_poa_condo_disclosure_fee'] = 350
+        st.session_state['poa_condo_disclosure_fee'] = 0
 
         st.session_state['offer_1_name'] = 'Offer 1'
         st.session_state['offer_1_settlement_date'] = date.today()
@@ -279,8 +288,17 @@ def main():
     def update_common_info_form():
         st.session_state.listing_company_pct = st.session_state.update_listing_company_pct / 100
         st.session_state.selling_company_pct = st.session_state.update_selling_company_pct / 100
+        st.session_state.processing_fee = st.session_state.update_processing_fee
+        st.session_state.settlement_fee = st.session_state.update_settlement_fee
+        st.session_state.deed_preparation_fee = st.session_state.update_deed_preparation_fee
+        st.session_state.lien_trust_release_fee = st.session_state.update_lien_trust_release_fee
+        st.session_state.lien_trust_release_qty = st.session_state.update_lien_trust_release_qty
+        st.session_state.recording_release_fee = st.session_state.update_recording_release_fee
+        st.session_state.recording_release_qty = st.session_state.update_recording_release_qty
         st.session_state.grantors_tax_pct = st.session_state.update_grantors_tax_pct / 100
         st.session_state.congestion_tax_pct = st.session_state.update_congestion_tax_pct / 100
+        st.session_state.pest_inspection_fee = st.session_state.update_pest_inspection_fee
+        st.session_state.poa_condo_disclosure_fee = st.session_state.update_poa_condo_disclosure_fee
 
 
     def days_int_to_string(x):
@@ -580,20 +598,20 @@ def main():
                     st.markdown('###### **Brokerage Cost Data**')
                     st.slider('Listing Company Compensation (%)', 0.0, 6.0, step=0.01, format='%.2f', key='update_listing_company_pct')
                     st.slider('Selling Company Compensation (%)', 0.0, 6.0, step=0.01, format='%.2f', key='update_selling_company_pct')
-                    st.slider('Processing Fee ($)', 0, 10000, step=1, key='processing_fee')
+                    st.slider('Processing Fee ($)', 0, 10000, step=1, key='update_processing_fee')
                 with closing_cost_col:
                     st.markdown('###### **Closing Cost Data**')
-                    st.slider('Settlement Fee Amount ($)', 0, 1000, step=1, key='settlement_fee')
-                    st.slider('Deed Preparation Fee Amount ($)', 0, 1000, step=1, key='deed_preparation_fee')
-                    st.slider('Release of Liens / Trusts Fee Amount ($)', 0, 1000, step=1, key='lien_trust_release_fee')
-                    st.slider('Quantity of Liens / Trusts to be Released', 0, 10, step=1, key='lien_trust_release_qty')
+                    st.slider('Settlement Fee Amount ($)', 0, 1000, step=1, key='update_settlement_fee')
+                    st.slider('Deed Preparation Fee Amount ($)', 0, 1000, step=1, key='update_deed_preparation_fee')
+                    st.slider('Release of Liens / Trusts Fee Amount ($)', 0, 1000, step=1, key='update_lien_trust_release_fee')
+                    st.slider('Quantity of Liens / Trusts to be Released', 0, 10, step=1, key='update_lien_trust_release_qty')
                 with misc_col:
                     st.markdown('###### **Miscellaneous Cost Data**')
-                    st.slider('Recording Release Fee Amount ($)', 0, 250, step=1, key='recording_release_fee')
-                    st.slider('Quantity of Recording Releases', 0, 10, step=1, key='recording_release_qty')
+                    st.slider('Recording Release Fee Amount ($)', 0, 250, step=1, key='update_recording_release_fee')
+                    st.slider('Quantity of Recording Releases', 0, 10, step=1, key='update_recording_release_qty')
                     st.slider('Grantor\'s Tax Pct (%)', 0.0, 1.0, step=0.01, format='%.2f', key='update_grantors_tax_pct')
                     st.slider('Congestion Tax Pct (%)', 0.0, 1.0, step=0.01, format='%.2f', key='update_congestion_tax_pct')
-                    st.slider('Pest Inspection Fee Amount ($)', 0, 100, step=1, key='pest_inspection_fee')
+                    st.slider('Pest Inspection Fee Amount ($)', 0, 100, step=1, key='update_pest_inspection_fee')
                     st.slider('Power of Attorney / Condo Disclosure Fee Amount ($)', 0, 500, step=1, key='poa_condo_disclosure_fee')
                 common_info_submit = st.form_submit_button('Submit Common Information', on_click=update_common_info_form)
 
