@@ -23,6 +23,15 @@ def main():
     offer_1_container = st.container()
     offer_2_container = st.container()
     offer_3_container = st.container()
+    offer_4_container = st.container()
+    offer_5_container = st.container()
+    offer_6_container = st.container()
+    offer_7_container = st.container()
+    offer_8_container = st.container()
+    offer_9_container = st.container()
+    offer_10_container = st.container()
+    offer_11_container = st.container()
+    offer_12_container = st.container()
 
     with logo_container:
         col1, col2, col3 = st.columns([1, 2, 1])
@@ -81,16 +90,24 @@ def main():
             )
 
     if 'preparer' not in st.session_state:
+        st.session_state['update_preparer'] = ''
         st.session_state['preparer'] = ''
-        st.session_state['prep_date'] = date.today()
-        # st.session_state['update_prep_date'] = date.today()
-        st.session_state['offer_qty'] = 1
+        st.session_state['update_prep_date'] = date.today()
+        st.session_state['prep_date'] = ''
+        st.session_state['update_offer_qty'] = 1
+        st.session_state['offer_qty'] = 0
 
+        st.session_state['update_seller_name'] = ''
         st.session_state['seller_name'] = ''
+        st.session_state['update_address'] = ''
         st.session_state['address'] = ''
+        st.session_state['update_list_price'] = 0
         st.session_state['list_price'] = 0
+        st.session_state['update_payoff_amt_first_trust'] = 0
         st.session_state['payoff_amt_first_trust'] = 0
+        st.session_state['update_payoff_amt_second_trust'] = 0
         st.session_state['payoff_amt_second_trust'] = 0
+        st.session_state['update_annual_tax_amt'] = 0
         st.session_state['annual_tax_amt'] = 0
         st.session_state['prorated_annual_tax_amt'] = 0.0
         st.session_state['annual_hoa_condo_fee_amt'] = 0
@@ -124,19 +141,23 @@ def main():
         st.session_state['update_poa_condo_disclosure_fee'] = 350
         st.session_state['poa_condo_disclosure_fee'] = 0
 
-        st.session_state['offer_1_name'] = 'Offer 1'
-        st.session_state['offer_1_settlement_date'] = date.today()
-        # st.session_state['update_offer_1_settlement_date'] = date.today()
+        st.session_state['update_offer_1_name'] = 'Offer 1'
+        st.session_state['offer_1_name'] = ''
+        st.session_state['update_offer_1_settlement_date'] = date.today()
+        st.session_state['offer_1_settlement_date'] = ''
+        st.session_state['update_offer_1_settlement_company'] = ''
         st.session_state['offer_1_settlement_company'] = ''
+        st.session_state['update_offer_1_amt'] = 0
         st.session_state['offer_1_amt'] = 0
+        st.session_state['update_offer_1_emd_amt'] = 0
         st.session_state['offer_1_emd_amt'] = 0
         st.session_state['offer_1_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_1_down_pmt_pct'] = 0.0
         st.session_state['offer_1_down_pmt_pct'] = 0.0
         st.session_state['offer_1_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
         st.session_state['offer_1_update_closing_subsidy_pct'] = 0.0
         st.session_state['offer_1_closing_subsidy_flat_amt'] = 0
         st.session_state['offer_1_closing_subsidy_amt'] = 0.0
-        # st.session_state['offer_1_contingencies_waived'] = ''
         st.session_state['offer_1_home_inspection_check'] = False
         st.session_state['offer_1_home_inspection_value'] = ''
         st.session_state['offer_1_home_inspection_days'] = 0
@@ -173,19 +194,23 @@ def main():
         st.session_state['offer_1_post_occupancy_date'] = date.today()
         # st.session_state['offer_1_update_post_occupancy_date'] = date.today()
 
-        st.session_state['offer_2_name'] = 'Offer 2'
-        st.session_state['offer_2_settlement_date'] = date.today()
-        # st.session_state['update_offer_2_settlement_date'] = date.today()
+        st.session_state['update_offer_2_name'] = 'Offer 2'
+        st.session_state['offer_2_name'] = ''
+        st.session_state['update_offer_2_settlement_date'] = date.today()
+        st.session_state['offer_2_settlement_date'] = ''
+        st.session_state['update_offer_2_settlement_company'] = ''
         st.session_state['offer_2_settlement_company'] = ''
+        st.session_state['update_offer_2_amt'] = 0
         st.session_state['offer_2_amt'] = 0
+        st.session_state['update_offer_2_emd_amt'] = 0
         st.session_state['offer_2_emd_amt'] = 0
         st.session_state['offer_2_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_2_down_pmt_pct'] = 0.0
         st.session_state['offer_2_down_pmt_pct'] = 0.0
         st.session_state['offer_2_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
         st.session_state['offer_2_update_closing_subsidy_pct'] = 0.0
         st.session_state['offer_2_closing_subsidy_flat_amt'] = 0
         st.session_state['offer_2_closing_subsidy_amt'] = 0.0
-        # st.session_state['offer_2_contingencies_waived'] = ''
         st.session_state['offer_2_home_inspection_check'] = False
         st.session_state['offer_2_home_inspection_value'] = ''
         st.session_state['offer_2_home_inspection_days'] = 0
@@ -222,19 +247,23 @@ def main():
         st.session_state['offer_2_post_occupancy_date'] = date.today()
         # st.session_state['offer_2_update_post_occupancy_date'] = date.today()
 
-        st.session_state['offer_3_name'] = 'Offer 3'
-        st.session_state['offer_3_settlement_date'] = date.today()
-        # st.session_state['update_offer_3_settlement_date'] = date.today()
+        st.session_state['update_offer_3_name'] = 'Offer 3'
+        st.session_state['offer_3_name'] = ''
+        st.session_state['update_offer_3_settlement_date'] = date.today()
+        st.session_state['offer_3_settlement_date'] = ''
+        st.session_state['update_offer_3_settlement_company'] = ''
         st.session_state['offer_3_settlement_company'] = ''
+        st.session_state['update_offer_3_amt'] = 0
         st.session_state['offer_3_amt'] = 0
+        st.session_state['update_offer_3_emd_amt'] = 0
         st.session_state['offer_3_emd_amt'] = 0
         st.session_state['offer_3_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_3_down_pmt_pct'] = 0.0
         st.session_state['offer_3_down_pmt_pct'] = 0.0
         st.session_state['offer_3_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
         st.session_state['offer_3_update_closing_subsidy_pct'] = 0.0
         st.session_state['offer_3_closing_subsidy_flat_amt'] = 0
         st.session_state['offer_3_closing_subsidy_amt'] = 0.0
-        # st.session_state['offer_3_contingencies_waived'] = ''
         st.session_state['offer_3_home_inspection_check'] = False
         st.session_state['offer_3_home_inspection_value'] = ''
         st.session_state['offer_3_home_inspection_days'] = 0
@@ -271,18 +300,80 @@ def main():
         st.session_state['offer_3_post_occupancy_date'] = date.today()
         # st.session_state['offer_3_update_post_occupancy_date'] = date.today()
 
+        st.session_state['update_offer_4_name'] = 'Offer 4'
+        st.session_state['offer_4_name'] = ''
+        st.session_state['update_offer_4_settlement_date'] = date.today()
+        st.session_state['offer_4_settlement_date'] = ''
+        st.session_state['update_offer_4_settlement_company'] = ''
+        st.session_state['offer_4_settlement_company'] = ''
+        st.session_state['update_offer_4_amt'] = 0
+        st.session_state['offer_4_amt'] = 0
+        st.session_state['update_offer_4_emd_amt'] = 0
+        st.session_state['offer_4_emd_amt'] = 0
+        st.session_state['offer_4_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_4_down_pmt_pct'] = 0.0
+        st.session_state['offer_4_down_pmt_pct'] = 0.0
+        st.session_state['offer_4_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_4_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_4_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_4_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_4_home_inspection_check'] = False
+        st.session_state['offer_4_home_inspection_value'] = ''
+        st.session_state['offer_4_home_inspection_days'] = 0
+        st.session_state['offer_4_home_inspection_days_string'] = ''
+        st.session_state['offer_4_radon_inspection_check'] = False
+        st.session_state['offer_4_radon_inspection_value'] = ''
+        st.session_state['offer_4_radon_inspection_days'] = 0
+        st.session_state['offer_4_radon_inspection_days_string'] = ''
+        st.session_state['offer_4_septic_inspection_check'] = False
+        st.session_state['offer_4_septic_inspection_value'] = ''
+        st.session_state['offer_4_septic_inspection_days'] = 0
+        st.session_state['offer_4_septic_inspection_days_string'] = ''
+        st.session_state['offer_4_well_inspection_check'] = False
+        st.session_state['offer_4_well_inspection_value'] = ''
+        st.session_state['offer_4_well_inspection_days'] = 0
+        st.session_state['offer_4_well_inspection_days_string'] = ''
+        st.session_state['offer_4_financing_contingency_check'] = False
+        st.session_state['offer_4_financing_contingency_value'] = ''
+        st.session_state['offer_4_financing_contingency_days'] = 0
+        st.session_state['offer_4_financing_contingency_days_string'] = ''
+        st.session_state['offer_4_appraisal_contingency_check'] = False
+        st.session_state['offer_4_appraisal_contingency_value'] = ''
+        st.session_state['offer_4_appraisal_contingency_days'] = 0
+        st.session_state['offer_4_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_4_home_sale_contingency_check'] = False
+        st.session_state['offer_4_home_sale_contingency_value'] = ''
+        st.session_state['offer_4_home_sale_contingency_days'] = 0
+        st.session_state['offer_4_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_4_pre_occupancy_request'] = False
+        st.session_state['offer_4_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_4_pre_occupancy_date'] = date.today()
+        st.session_state['offer_4_post_occupancy_request'] = False
+        st.session_state['offer_4_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_4_post_occupancy_date'] = date.today()
+        # st.session_state['offer_4_update_post_occupancy_date'] = date.today()
+
 
     contingencies = ['Home Inspection', 'Financing', 'Appraisal', 'Pest Inspection']
     financing_types = ['Select Financing Type', 'Cash', 'Conventional', 'FHA', 'VA', 'USDA', 'Other']
 
 
     def update_intro_info_form():
+        st.session_state.preparer = st.session_state.update_preparer
         st.session_state.prep_date = st.session_state.update_prep_date
+        st.session_state.offer_qty = st.session_state.update_offer_qty
 
 
     def update_property_info_form():
+        st.session_state.seller_name = st.session_state.update_seller_name
+        st.session_state.address = st.session_state.update_address
+        st.session_state.list_price = st.session_state.update_list_price
+        st.session_state.payoff_amt_first_trust = st.session_state.update_payoff_amt_first_trust
+        st.session_state.payoff_amt_second_trust = st.session_state.update_payoff_amt_second_trust
+        st.session_state.annual_tax_amt = st.session_state.update_annual_tax_amt
         st.session_state.prorated_annual_tax_amt = st.session_state.annual_tax_amt / 12 * 3
-        st.session_state.prorated_annual_hoa_condo_fee_amt = st.session_state.update_annual_hoa_condo_fee_amt / 12 * 3
+        st.session_state.annual_hoa_condo_fee_amt = st.session_state.update_annual_hoa_condo_fee_amt
+        st.session_state.prorated_annual_hoa_condo_fee_amt = st.session_state.annual_hoa_condo_fee_amt / 12 * 3
 
 
     def update_common_info_form():
@@ -306,13 +397,17 @@ def main():
             string_value = ''
         return string_value
 
-    def days_int_to_string_false(x):
-        pass
+    # def days_int_to_string_false(x):
+    #     pass
 
 
     def update_offer_1_info_form():
-        st.session_state.offer_1_name = st.session_state.offer_1_name
+        st.session_state.offer_1_name = st.session_state.update_offer_1_name
         st.session_state.offer_1_settlement_date = st.session_state.update_offer_1_settlement_date
+        st.session_state.offer_1_settlement_company = st.session_state.update_offer_1_settlement_company
+        st.session_state.offer_1_amt = st.session_state.update_offer_1_amt
+        st.session_state.offer_1_emd_amt = st.session_state.update_offer_1_emd_amt
+        st.session_state.offer_1_down_pmt_pct = st.session_state.update_offer_1_down_pmt_pct
         st.session_state.offer_1_down_pmt_pct = st.session_state.offer_1_down_pmt_pct / 100
         st.session_state.offer_1_closing_subsidy_pct = st.session_state.offer_1_update_closing_subsidy_pct / 100
         if st.session_state.offer_1_closing_subsidy_radio == 'Percent of Offer Amt (%)':
@@ -395,8 +490,12 @@ def main():
             st.session_state.offer_1_post_occupancy_date = ''
 
     def update_offer_2_info_form():
-        st.session_state.offer_2_name = st.session_state.offer_2_name
+        st.session_state.offer_2_name = st.session_state.update_offer_2_name
         st.session_state.offer_2_settlement_date = st.session_state.update_offer_2_settlement_date
+        st.session_state.offer_2_settlement_company = st.session_state.update_offer_2_settlement_company
+        st.session_state.offer_2_amt = st.session_state.update_offer_2_amt
+        st.session_state.offer_2_emd_amt = st.session_state.update_offer_2_emd_amt
+        st.session_state.offer_2_down_pmt_pct = st.session_state.update_offer_2_down_pmt_pct
         st.session_state.offer_2_down_pmt_pct = st.session_state.offer_2_down_pmt_pct / 100
         st.session_state.offer_2_closing_subsidy_pct = st.session_state.offer_2_update_closing_subsidy_pct / 100
         if st.session_state.offer_2_closing_subsidy_radio == 'Percent of Offer Amt (%)':
@@ -478,8 +577,12 @@ def main():
             st.session_state.offer_2_post_occupancy_date = ''
 
     def update_offer_3_info_form():
-        st.session_state.offer_3_name = st.session_state.offer_3_name
+        st.session_state.offer_3_name = st.session_state.update_offer_3_name
         st.session_state.offer_3_settlement_date = st.session_state.update_offer_3_settlement_date
+        st.session_state.offer_3_settlement_company = st.session_state.update_offer_3_settlement_company
+        st.session_state.offer_3_amt = st.session_state.update_offer_3_amt
+        st.session_state.offer_3_emd_amt = st.session_state.update_offer_3_emd_amt
+        st.session_state.offer_3_down_pmt_pct = st.session_state.update_offer_3_down_pmt_pct
         st.session_state.offer_3_down_pmt_pct = st.session_state.offer_3_down_pmt_pct / 100
         st.session_state.offer_3_closing_subsidy_pct = st.session_state.offer_3_update_closing_subsidy_pct / 100
         if st.session_state.offer_3_closing_subsidy_radio == 'Percent of Offer Amt (%)':
@@ -560,6 +663,94 @@ def main():
         else:
             st.session_state.offer_3_post_occupancy_date = ''
 
+    def update_offer_4_info_form():
+        st.session_state.offer_4_name = st.session_state.update_offer_4_name
+        st.session_state.offer_4_settlement_date = st.session_state.update_offer_4_settlement_date
+        st.session_state.offer_4_settlement_company = st.session_state.update_offer_4_settlement_company
+        st.session_state.offer_4_amt = st.session_state.update_offer_4_amt
+        st.session_state.offer_4_emd_amt = st.session_state.update_offer_4_emd_amt
+        st.session_state.offer_4_down_pmt_pct = st.session_state.update_offer_4_down_pmt_pct
+        st.session_state.offer_4_down_pmt_pct = st.session_state.offer_4_down_pmt_pct / 100
+        st.session_state.offer_4_closing_subsidy_pct = st.session_state.offer_4_update_closing_subsidy_pct / 100
+        if st.session_state.offer_4_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_4_closing_subsidy_amt = st.session_state.offer_4_closing_subsidy_pct * st.session_state.offer_4_amt
+        else:
+            st.session_state.offer_4_closing_subsidy_amt = st.session_state.offer_4_closing_subsidy_flat_amt
+
+        if st.session_state.offer_4_home_inspection_check:
+            st.session_state.offer_4_home_inspection_value = 'Y'
+            st.session_state.offer_4_home_inspection_days = st.session_state.offer_4_home_inspection_days
+            st.session_state.offer_4_home_inspection_days_string = st.session_state.offer_4_home_inspection_days
+        else:
+            st.session_state.offer_4_home_inspection_value = ''
+            st.session_state.offer_4_home_inspection_days = 0
+            st.session_state.offer_4_home_inspection_days_string = days_int_to_string(st.session_state.offer_4_home_inspection_days)
+
+        if st.session_state.offer_4_radon_inspection_check:
+            st.session_state.offer_4_radon_inspection_value = 'Y'
+            st.session_state.offer_4_radon_inspection_days = st.session_state.offer_4_radon_inspection_days
+            st.session_state.offer_4_radon_inspection_days_string = st.session_state.offer_4_radon_inspection_days
+        else:
+            st.session_state.offer_4_radon_inspection_value = ''
+            st.session_state.offer_4_radon_inspection_days = 0
+            st.session_state.offer_4_radon_inspection_days_string = days_int_to_string(st.session_state.offer_4_radon_inspection_days)
+
+        if st.session_state.offer_4_septic_inspection_check:
+            st.session_state.offer_4_septic_inspection_value = 'Y'
+            st.session_state.offer_4_septic_inspection_days = st.session_state.offer_4_septic_inspection_days
+            st.session_state.offer_4_septic_inspection_days_string = st.session_state.offer_4_septic_inspection_days
+        else:
+            st.session_state.offer_4_septic_inspection_value = ''
+            st.session_state.offer_4_septic_inspection_days = 0
+            st.session_state.offer_4_septic_inspection_days_string = days_int_to_string(st.session_state.offer_4_septic_inspection_days)
+
+        if st.session_state.offer_4_well_inspection_check:
+            st.session_state.offer_4_well_inspection_value = 'Y'
+            st.session_state.offer_4_well_inspection_days = st.session_state.offer_4_well_inspection_days
+            st.session_state.offer_4_well_inspection_days_string = st.session_state.offer_4_well_inspection_days
+        else:
+            st.session_state.offer_4_well_inspection_value = ''
+            st.session_state.offer_4_well_inspection_days = 0
+            st.session_state.offer_4_well_inspection_days_string = days_int_to_string(st.session_state.offer_4_well_inspection_days)
+
+        if st.session_state.offer_4_financing_contingency_check:
+            st.session_state.offer_4_financing_contingency_value = 'Y'
+            st.session_state.offer_4_financing_contingency_days = st.session_state.offer_4_financing_contingency_days
+            st.session_state.offer_4_financing_contingency_days_string = st.session_state.offer_4_financing_contingency_days
+        else:
+            st.session_state.offer_4_financing_contingency_value = ''
+            st.session_state.offer_4_financing_contingency_days = 0
+            st.session_state.offer_4_financing_contingency_days_string = days_int_to_string(st.session_state.offer_4_financing_contingency_days)
+
+        if st.session_state.offer_4_appraisal_contingency_check:
+            st.session_state.offer_4_appraisal_contingency_value = 'Y'
+            st.session_state.offer_4_appraisal_contingency_days = st.session_state.offer_4_appraisal_contingency_days
+            st.session_state.offer_4_appraisal_contingency_days_string = st.session_state.offer_4_appraisal_contingency_days
+        else:
+            st.session_state.offer_4_appraisal_contingency_value = ''
+            st.session_state.offer_4_appraisal_contingency_days = 0
+            st.session_state.offer_4_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_4_appraisal_contingency_days)
+
+        if st.session_state.offer_4_home_sale_contingency_check:
+            st.session_state.offer_4_home_sale_contingency_value = 'Y'
+            st.session_state.offer_4_home_sale_contingency_days = st.session_state.offer_4_home_inspection_days
+            st.session_state.offer_4_home_sale_contingency_days_string = st.session_state.offer_4_home_sale_contingency_days
+        else:
+            st.session_state.offer_4_home_sale_contingency_value = ''
+            st.session_state.offer_4_home_sale_contingency_days = 0
+            st.session_state.offer_4_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_4_home_sale_contingency_days)
+
+        if st.session_state.offer_4_pre_occupancy_request:
+            st.session_state.offer_4_pre_occupancy_date = st.session_state.offer_4_update_pre_occupancy_date
+        else:
+            st.session_state.offer_4_pre_occupancy_date = ''
+
+        if st.session_state.offer_4_post_occupancy_request:
+            st.session_state.offer_4_post_occupancy_date = st.session_state.offer_4_update_post_occupancy_date
+        else:
+            st.session_state.offer_4_post_occupancy_date = ''
+
 
     with intro_info_container:
         with st.expander('Introduction Data Form'):
@@ -567,10 +758,10 @@ def main():
                 st.markdown('##### **Enter Top-Level Form Data**')
                 intro_info_col1, intro_info_col2 = st.columns(2)
                 with intro_info_col1:
-                    st.text_input('Enter the name of the agent preparing this offer comparison', key='preparer')
+                    st.text_input('Enter the name of the agent preparing this offer comparison', key='update_preparer')
                     st.date_input('Enter the date that this offer comparison was created', key='update_prep_date')
                 with intro_info_col2:
-                    st.slider('Number of Offers Being Compared', 1, 10, step=1, key='offer_qty')
+                    st.slider('Number of Offers Being Compared', 1, 12, step=1, key='update_offer_qty')
                 intro_info_submit = st.form_submit_button('Submit Information', on_click=update_intro_info_form)
 
     with property_container:
@@ -579,13 +770,13 @@ def main():
                 st.markdown('##### **Enter Property-Related Data**')
                 property_info_col1, property_info_col2 = st.columns(2)
                 with property_info_col1:
-                    st.text_input('Name of the Seller(s)', key='seller_name')
-                    st.text_input('Property\'s Street Address', key='address')
-                    st.slider('Property\'s List Price ($)', 0, 1500000, step=1000, key='list_price')
+                    st.text_input('Name of the Seller(s)', key='update_seller_name')
+                    st.text_input('Property\'s Street Address', key='update_address')
+                    st.slider('Property\'s List Price ($)', 0, 1500000, step=1000, key='update_list_price')
                 with property_info_col2:
-                    st.slider('Estimated Payoff - First Trust ($)', 0, 1000000, step=1000, key='payoff_amt_first_trust')
-                    st.slider('Estimated Payoff - Second Trust ($)', 0, 1000000, step=1000, key='payoff_amt_second_trust')
-                    st.slider('Estimated Annual Tax Amount ($)', 0, 25000, step=1, key='annual_tax_amt')
+                    st.slider('Estimated Payoff - First Trust ($)', 0, 1000000, step=1000, key='update_payoff_amt_first_trust')
+                    st.slider('Estimated Payoff - Second Trust ($)', 0, 1000000, step=1000, key='update_payoff_amt_second_trust')
+                    st.slider('Estimated Annual Tax Amount ($)', 0, 25000, step=1, key='update_annual_tax_amt')
                     st.slider('Estimated Annual HOA / Condo Fee Amount ($)', 0, 10000, step=1, key='update_annual_hoa_condo_fee_amt')
                 property_info_submit = st.form_submit_button('Submit Property Information', on_click=update_property_info_form)
 
@@ -621,14 +812,14 @@ def main():
                 st.markdown('##### **Enter Offer 1\'s Information**')
                 offer_1_col1, offer_1_col2 = st.columns(2)
                 with offer_1_col1:
-                    st.text_input('Name of Offer', key='offer_1_name')
+                    st.text_input('Name of Offer', key='update_offer_1_name')
                     st.date_input('Settlement Date', key='update_offer_1_settlement_date')
-                    st.text_input('Settlement Company', key='offer_1_settlement_company')
-                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='offer_1_amt')
-                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='offer_1_emd_amt')
+                    st.text_input('Settlement Company', key='update_offer_1_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_1_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_1_emd_amt')
                 with offer_1_col2:
                     st.selectbox('Financing Type', financing_types, key='offer_1_finance_type')
-                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='offer_1_down_pmt_pct')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_1_down_pmt_pct')
                     st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_1_closing_subsidy_radio')
                     st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_1_update_closing_subsidy_pct')
                     st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_1_closing_subsidy_flat_amt')
@@ -677,14 +868,14 @@ def main():
                 st.markdown('##### **Enter Offer 2\'s Information**')
                 offer_2_col1, offer_2_col2 = st.columns(2)
                 with offer_2_col1:
-                    st.text_input('Name of Offer', key='offer_2_name')
+                    st.text_input('Name of Offer', key='update_offer_2_name')
                     st.date_input('Settlement Date', key='update_offer_2_settlement_date')
-                    st.text_input('Settlement Company', key='offer_2_settlement_company')
-                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='offer_2_amt')
-                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='offer_2_emd_amt')
+                    st.text_input('Settlement Company', key='update_offer_2_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_2_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_2_emd_amt')
                 with offer_2_col2:
                     st.selectbox('Financing Type', financing_types, key='offer_2_finance_type')
-                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='offer_2_down_pmt_pct')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_2_down_pmt_pct')
                     st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_2_closing_subsidy_radio')
                     st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_2_update_closing_subsidy_pct')
                     st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_2_closing_subsidy_flat_amt')
@@ -733,14 +924,14 @@ def main():
                 st.markdown('##### **Enter Offer 3\'s Information**')
                 offer_3_col1, offer_3_col2 = st.columns(2)
                 with offer_3_col1:
-                    st.text_input('Name of Offer', key='offer_3_name')
+                    st.text_input('Name of Offer', key='update_offer_3_name')
                     st.date_input('Settlement Date', key='update_offer_3_settlement_date')
-                    st.text_input('Settlement Company', key='offer_3_settlement_company')
-                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='offer_3_amt')
-                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='offer_3_emd_amt')
+                    st.text_input('Settlement Company', key='update_offer_3_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_3_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_3_emd_amt')
                 with offer_3_col2:
                     st.selectbox('Financing Type', financing_types, key='offer_3_finance_type')
-                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='offer_3_down_pmt_pct')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_3_down_pmt_pct')
                     st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_3_closing_subsidy_radio')
                     st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_3_update_closing_subsidy_pct')
                     st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_3_closing_subsidy_flat_amt')
@@ -782,6 +973,61 @@ def main():
                 with offer_3_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_3_update_post_occupancy_date')
                 offer_3_submit = st.form_submit_button('Submit Offer 3\'s Information', on_click=update_offer_3_info_form)
+
+    with offer_4_container:
+        with st.expander('Offer 4 Form'):
+            with st.form(key='offer_4_info_form'):
+                st.markdown('##### **Enter Offer 4\'s Information**')
+                offer_4_col1, offer_4_col2 = st.columns(2)
+                with offer_4_col1:
+                    st.text_input('Name of Offer', key='update_offer_4_name')
+                    st.date_input('Settlement Date', key='update_offer_4_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_4_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_4_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_4_emd_amt')
+                with offer_4_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_4_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_4_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_4_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_4_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_4_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_1_contingencies_waved')
+                offer_4_cont_col1, offer_4_cont_col2 = st.columns(2)
+                with offer_4_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_4_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_4_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_4_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_4_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_4_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_4_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_4_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_4_well_inspection_days')
+                with offer_4_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_4_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_4_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_4_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_4_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_4_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_4_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_4_pre_occupancy_col1, offer_4_pre_occupancy_col2 = st.columns(2)
+                with offer_4_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_4_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_4_pre_occupancy_credit_to_seller_amt')
+                with offer_4_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_4_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_4_post_occupancy_col1, offer_4_post_occupancy_col2 = st.columns(2)
+                with offer_4_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_4_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_4_post_occupancy_cost_to_seller_amt')
+                with offer_4_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_4_update_post_occupancy_date')
+                offer_4_submit = st.form_submit_button('Submit Offer 4\'s Information', on_click=update_offer_4_info_form)
 
     # st.write(st.session_state)
 
@@ -889,6 +1135,32 @@ def main():
         offer_3_closing_cost_subsidy_amt=st.session_state.offer_3_closing_subsidy_amt,
         offer_3_pre_occupancy_credit_amt=st.session_state.offer_3_pre_occupancy_credit_to_seller_amt,
         offer_3_post_occupancy_cost_amt=st.session_state.offer_3_post_occupancy_cost_to_seller_amt,
+        offer_4_name=st.session_state.offer_4_name,
+        offer_4_amt=st.session_state.offer_4_amt,
+        offer_4_down_pmt_pct=st.session_state.offer_4_down_pmt_pct,
+        offer_4_settlement_date=st.session_state.offer_4_settlement_date,
+        offer_4_settlement_company=st.session_state.offer_4_settlement_company,
+        offer_4_emd_amt=st.session_state.offer_4_emd_amt,
+        offer_4_financing_type=st.session_state.offer_4_finance_type,
+        offer_4_home_inspection_check=st.session_state.offer_4_home_inspection_value,
+        offer_4_home_inspection_days=st.session_state.offer_4_home_inspection_days_string,
+        offer_4_radon_inspection_check=st.session_state.offer_4_radon_inspection_value,
+        offer_4_radon_inspection_days=st.session_state.offer_4_radon_inspection_days_string,
+        offer_4_septic_inspection_check=st.session_state.offer_4_septic_inspection_value,
+        offer_4_septic_inspection_days=st.session_state.offer_4_septic_inspection_days_string,
+        offer_4_well_inspection_check=st.session_state.offer_4_well_inspection_value,
+        offer_4_well_inspection_days=st.session_state.offer_4_well_inspection_days_string,
+        offer_4_finance_contingency_check=st.session_state.offer_4_financing_contingency_value,
+        offer_4_finance_contingency_days=st.session_state.offer_4_financing_contingency_days_string,
+        offer_4_appraisal_contingency_check=st.session_state.offer_4_appraisal_contingency_value,
+        offer_4_appraisal_contingency_days=st.session_state.offer_4_appraisal_contingency_days_string,
+        offer_4_home_sale_contingency_check=st.session_state.offer_4_home_sale_contingency_value,
+        offer_4_home_sale_contingency_days=st.session_state.offer_4_home_sale_contingency_days_string,
+        offer_4_pre_occupancy_date=st.session_state.offer_4_pre_occupancy_date,
+        offer_4_post_occupancy_date=st.session_state.offer_4_post_occupancy_date,
+        offer_4_closing_cost_subsidy_amt=st.session_state.offer_4_closing_subsidy_amt,
+        offer_4_pre_occupancy_credit_amt=st.session_state.offer_4_pre_occupancy_credit_to_seller_amt,
+        offer_4_post_occupancy_cost_amt=st.session_state.offer_4_post_occupancy_cost_to_seller_amt,
     )
 
     st.download_button(
