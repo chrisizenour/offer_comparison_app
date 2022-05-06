@@ -353,6 +353,430 @@ def main():
         st.session_state['offer_4_post_occupancy_date'] = date.today()
         # st.session_state['offer_4_update_post_occupancy_date'] = date.today()
 
+        st.session_state['update_offer_5_name'] = 'Offer 5'
+        st.session_state['offer_5_name'] = ''
+        st.session_state['update_offer_5_settlement_date'] = date.today()
+        st.session_state['offer_5_settlement_date'] = ''
+        st.session_state['update_offer_5_settlement_company'] = ''
+        st.session_state['offer_5_settlement_company'] = ''
+        st.session_state['update_offer_5_amt'] = 0
+        st.session_state['offer_5_amt'] = 0
+        st.session_state['update_offer_5_emd_amt'] = 0
+        st.session_state['offer_5_emd_amt'] = 0
+        st.session_state['offer_5_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_5_down_pmt_pct'] = 0.0
+        st.session_state['offer_5_down_pmt_pct'] = 0.0
+        st.session_state['offer_5_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_5_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_5_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_5_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_5_home_inspection_check'] = False
+        st.session_state['offer_5_home_inspection_value'] = ''
+        st.session_state['offer_5_home_inspection_days'] = 0
+        st.session_state['offer_5_home_inspection_days_string'] = ''
+        st.session_state['offer_5_radon_inspection_check'] = False
+        st.session_state['offer_5_radon_inspection_value'] = ''
+        st.session_state['offer_5_radon_inspection_days'] = 0
+        st.session_state['offer_5_radon_inspection_days_string'] = ''
+        st.session_state['offer_5_septic_inspection_check'] = False
+        st.session_state['offer_5_septic_inspection_value'] = ''
+        st.session_state['offer_5_septic_inspection_days'] = 0
+        st.session_state['offer_5_septic_inspection_days_string'] = ''
+        st.session_state['offer_5_well_inspection_check'] = False
+        st.session_state['offer_5_well_inspection_value'] = ''
+        st.session_state['offer_5_well_inspection_days'] = 0
+        st.session_state['offer_5_well_inspection_days_string'] = ''
+        st.session_state['offer_5_financing_contingency_check'] = False
+        st.session_state['offer_5_financing_contingency_value'] = ''
+        st.session_state['offer_5_financing_contingency_days'] = 0
+        st.session_state['offer_5_financing_contingency_days_string'] = ''
+        st.session_state['offer_5_appraisal_contingency_check'] = False
+        st.session_state['offer_5_appraisal_contingency_value'] = ''
+        st.session_state['offer_5_appraisal_contingency_days'] = 0
+        st.session_state['offer_5_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_5_home_sale_contingency_check'] = False
+        st.session_state['offer_5_home_sale_contingency_value'] = ''
+        st.session_state['offer_5_home_sale_contingency_days'] = 0
+        st.session_state['offer_5_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_5_pre_occupancy_request'] = False
+        st.session_state['offer_5_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_5_pre_occupancy_date'] = date.today()
+        st.session_state['offer_5_post_occupancy_request'] = False
+        st.session_state['offer_5_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_5_post_occupancy_date'] = date.today()
+        # st.session_state['offer_5_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_6_name'] = 'Offer 6'
+        st.session_state['offer_6_name'] = ''
+        st.session_state['update_offer_6_settlement_date'] = date.today()
+        st.session_state['offer_6_settlement_date'] = ''
+        st.session_state['update_offer_6_settlement_company'] = ''
+        st.session_state['offer_6_settlement_company'] = ''
+        st.session_state['update_offer_6_amt'] = 0
+        st.session_state['offer_6_amt'] = 0
+        st.session_state['update_offer_6_emd_amt'] = 0
+        st.session_state['offer_6_emd_amt'] = 0
+        st.session_state['offer_6_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_6_down_pmt_pct'] = 0.0
+        st.session_state['offer_6_down_pmt_pct'] = 0.0
+        st.session_state['offer_6_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_6_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_6_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_6_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_6_home_inspection_check'] = False
+        st.session_state['offer_6_home_inspection_value'] = ''
+        st.session_state['offer_6_home_inspection_days'] = 0
+        st.session_state['offer_6_home_inspection_days_string'] = ''
+        st.session_state['offer_6_radon_inspection_check'] = False
+        st.session_state['offer_6_radon_inspection_value'] = ''
+        st.session_state['offer_6_radon_inspection_days'] = 0
+        st.session_state['offer_6_radon_inspection_days_string'] = ''
+        st.session_state['offer_6_septic_inspection_check'] = False
+        st.session_state['offer_6_septic_inspection_value'] = ''
+        st.session_state['offer_6_septic_inspection_days'] = 0
+        st.session_state['offer_6_septic_inspection_days_string'] = ''
+        st.session_state['offer_6_well_inspection_check'] = False
+        st.session_state['offer_6_well_inspection_value'] = ''
+        st.session_state['offer_6_well_inspection_days'] = 0
+        st.session_state['offer_6_well_inspection_days_string'] = ''
+        st.session_state['offer_6_financing_contingency_check'] = False
+        st.session_state['offer_6_financing_contingency_value'] = ''
+        st.session_state['offer_6_financing_contingency_days'] = 0
+        st.session_state['offer_6_financing_contingency_days_string'] = ''
+        st.session_state['offer_6_appraisal_contingency_check'] = False
+        st.session_state['offer_6_appraisal_contingency_value'] = ''
+        st.session_state['offer_6_appraisal_contingency_days'] = 0
+        st.session_state['offer_6_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_6_home_sale_contingency_check'] = False
+        st.session_state['offer_6_home_sale_contingency_value'] = ''
+        st.session_state['offer_6_home_sale_contingency_days'] = 0
+        st.session_state['offer_6_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_6_pre_occupancy_request'] = False
+        st.session_state['offer_6_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_6_pre_occupancy_date'] = date.today()
+        st.session_state['offer_6_post_occupancy_request'] = False
+        st.session_state['offer_6_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_6_post_occupancy_date'] = date.today()
+        # st.session_state['offer_6_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_7_name'] = 'Offer 7'
+        st.session_state['offer_7_name'] = ''
+        st.session_state['update_offer_7_settlement_date'] = date.today()
+        st.session_state['offer_7_settlement_date'] = ''
+        st.session_state['update_offer_7_settlement_company'] = ''
+        st.session_state['offer_7_settlement_company'] = ''
+        st.session_state['update_offer_7_amt'] = 0
+        st.session_state['offer_7_amt'] = 0
+        st.session_state['update_offer_7_emd_amt'] = 0
+        st.session_state['offer_7_emd_amt'] = 0
+        st.session_state['offer_7_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_7_down_pmt_pct'] = 0.0
+        st.session_state['offer_7_down_pmt_pct'] = 0.0
+        st.session_state['offer_7_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_7_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_7_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_7_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_7_home_inspection_check'] = False
+        st.session_state['offer_7_home_inspection_value'] = ''
+        st.session_state['offer_7_home_inspection_days'] = 0
+        st.session_state['offer_7_home_inspection_days_string'] = ''
+        st.session_state['offer_7_radon_inspection_check'] = False
+        st.session_state['offer_7_radon_inspection_value'] = ''
+        st.session_state['offer_7_radon_inspection_days'] = 0
+        st.session_state['offer_7_radon_inspection_days_string'] = ''
+        st.session_state['offer_7_septic_inspection_check'] = False
+        st.session_state['offer_7_septic_inspection_value'] = ''
+        st.session_state['offer_7_septic_inspection_days'] = 0
+        st.session_state['offer_7_septic_inspection_days_string'] = ''
+        st.session_state['offer_7_well_inspection_check'] = False
+        st.session_state['offer_7_well_inspection_value'] = ''
+        st.session_state['offer_7_well_inspection_days'] = 0
+        st.session_state['offer_7_well_inspection_days_string'] = ''
+        st.session_state['offer_7_financing_contingency_check'] = False
+        st.session_state['offer_7_financing_contingency_value'] = ''
+        st.session_state['offer_7_financing_contingency_days'] = 0
+        st.session_state['offer_7_financing_contingency_days_string'] = ''
+        st.session_state['offer_7_appraisal_contingency_check'] = False
+        st.session_state['offer_7_appraisal_contingency_value'] = ''
+        st.session_state['offer_7_appraisal_contingency_days'] = 0
+        st.session_state['offer_7_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_7_home_sale_contingency_check'] = False
+        st.session_state['offer_7_home_sale_contingency_value'] = ''
+        st.session_state['offer_7_home_sale_contingency_days'] = 0
+        st.session_state['offer_7_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_7_pre_occupancy_request'] = False
+        st.session_state['offer_7_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_7_pre_occupancy_date'] = date.today()
+        st.session_state['offer_7_post_occupancy_request'] = False
+        st.session_state['offer_7_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_7_post_occupancy_date'] = date.today()
+        # st.session_state['offer_7_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_8_name'] = 'Offer 8'
+        st.session_state['offer_8_name'] = ''
+        st.session_state['update_offer_8_settlement_date'] = date.today()
+        st.session_state['offer_8_settlement_date'] = ''
+        st.session_state['update_offer_8_settlement_company'] = ''
+        st.session_state['offer_8_settlement_company'] = ''
+        st.session_state['update_offer_8_amt'] = 0
+        st.session_state['offer_8_amt'] = 0
+        st.session_state['update_offer_8_emd_amt'] = 0
+        st.session_state['offer_8_emd_amt'] = 0
+        st.session_state['offer_8_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_8_down_pmt_pct'] = 0.0
+        st.session_state['offer_8_down_pmt_pct'] = 0.0
+        st.session_state['offer_8_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_8_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_8_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_8_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_8_home_inspection_check'] = False
+        st.session_state['offer_8_home_inspection_value'] = ''
+        st.session_state['offer_8_home_inspection_days'] = 0
+        st.session_state['offer_8_home_inspection_days_string'] = ''
+        st.session_state['offer_8_radon_inspection_check'] = False
+        st.session_state['offer_8_radon_inspection_value'] = ''
+        st.session_state['offer_8_radon_inspection_days'] = 0
+        st.session_state['offer_8_radon_inspection_days_string'] = ''
+        st.session_state['offer_8_septic_inspection_check'] = False
+        st.session_state['offer_8_septic_inspection_value'] = ''
+        st.session_state['offer_8_septic_inspection_days'] = 0
+        st.session_state['offer_8_septic_inspection_days_string'] = ''
+        st.session_state['offer_8_well_inspection_check'] = False
+        st.session_state['offer_8_well_inspection_value'] = ''
+        st.session_state['offer_8_well_inspection_days'] = 0
+        st.session_state['offer_8_well_inspection_days_string'] = ''
+        st.session_state['offer_8_financing_contingency_check'] = False
+        st.session_state['offer_8_financing_contingency_value'] = ''
+        st.session_state['offer_8_financing_contingency_days'] = 0
+        st.session_state['offer_8_financing_contingency_days_string'] = ''
+        st.session_state['offer_8_appraisal_contingency_check'] = False
+        st.session_state['offer_8_appraisal_contingency_value'] = ''
+        st.session_state['offer_8_appraisal_contingency_days'] = 0
+        st.session_state['offer_8_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_8_home_sale_contingency_check'] = False
+        st.session_state['offer_8_home_sale_contingency_value'] = ''
+        st.session_state['offer_8_home_sale_contingency_days'] = 0
+        st.session_state['offer_8_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_8_pre_occupancy_request'] = False
+        st.session_state['offer_8_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_8_pre_occupancy_date'] = date.today()
+        st.session_state['offer_8_post_occupancy_request'] = False
+        st.session_state['offer_8_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_8_post_occupancy_date'] = date.today()
+        # st.session_state['offer_8_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_9_name'] = 'Offer 9'
+        st.session_state['offer_9_name'] = ''
+        st.session_state['update_offer_9_settlement_date'] = date.today()
+        st.session_state['offer_9_settlement_date'] = ''
+        st.session_state['update_offer_9_settlement_company'] = ''
+        st.session_state['offer_9_settlement_company'] = ''
+        st.session_state['update_offer_9_amt'] = 0
+        st.session_state['offer_9_amt'] = 0
+        st.session_state['update_offer_9_emd_amt'] = 0
+        st.session_state['offer_9_emd_amt'] = 0
+        st.session_state['offer_9_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_9_down_pmt_pct'] = 0.0
+        st.session_state['offer_9_down_pmt_pct'] = 0.0
+        st.session_state['offer_9_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_9_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_9_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_9_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_9_home_inspection_check'] = False
+        st.session_state['offer_9_home_inspection_value'] = ''
+        st.session_state['offer_9_home_inspection_days'] = 0
+        st.session_state['offer_9_home_inspection_days_string'] = ''
+        st.session_state['offer_9_radon_inspection_check'] = False
+        st.session_state['offer_9_radon_inspection_value'] = ''
+        st.session_state['offer_9_radon_inspection_days'] = 0
+        st.session_state['offer_9_radon_inspection_days_string'] = ''
+        st.session_state['offer_9_septic_inspection_check'] = False
+        st.session_state['offer_9_septic_inspection_value'] = ''
+        st.session_state['offer_9_septic_inspection_days'] = 0
+        st.session_state['offer_9_septic_inspection_days_string'] = ''
+        st.session_state['offer_9_well_inspection_check'] = False
+        st.session_state['offer_9_well_inspection_value'] = ''
+        st.session_state['offer_9_well_inspection_days'] = 0
+        st.session_state['offer_9_well_inspection_days_string'] = ''
+        st.session_state['offer_9_financing_contingency_check'] = False
+        st.session_state['offer_9_financing_contingency_value'] = ''
+        st.session_state['offer_9_financing_contingency_days'] = 0
+        st.session_state['offer_9_financing_contingency_days_string'] = ''
+        st.session_state['offer_9_appraisal_contingency_check'] = False
+        st.session_state['offer_9_appraisal_contingency_value'] = ''
+        st.session_state['offer_9_appraisal_contingency_days'] = 0
+        st.session_state['offer_9_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_9_home_sale_contingency_check'] = False
+        st.session_state['offer_9_home_sale_contingency_value'] = ''
+        st.session_state['offer_9_home_sale_contingency_days'] = 0
+        st.session_state['offer_9_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_9_pre_occupancy_request'] = False
+        st.session_state['offer_9_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_9_pre_occupancy_date'] = date.today()
+        st.session_state['offer_9_post_occupancy_request'] = False
+        st.session_state['offer_9_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_9_post_occupancy_date'] = date.today()
+        # st.session_state['offer_9_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_10_name'] = 'Offer 10'
+        st.session_state['offer_10_name'] = ''
+        st.session_state['update_offer_10_settlement_date'] = date.today()
+        st.session_state['offer_10_settlement_date'] = ''
+        st.session_state['update_offer_10_settlement_company'] = ''
+        st.session_state['offer_10_settlement_company'] = ''
+        st.session_state['update_offer_10_amt'] = 0
+        st.session_state['offer_10_amt'] = 0
+        st.session_state['update_offer_10_emd_amt'] = 0
+        st.session_state['offer_10_emd_amt'] = 0
+        st.session_state['offer_10_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_10_down_pmt_pct'] = 0.0
+        st.session_state['offer_10_down_pmt_pct'] = 0.0
+        st.session_state['offer_10_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_10_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_10_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_10_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_10_home_inspection_check'] = False
+        st.session_state['offer_10_home_inspection_value'] = ''
+        st.session_state['offer_10_home_inspection_days'] = 0
+        st.session_state['offer_10_home_inspection_days_string'] = ''
+        st.session_state['offer_10_radon_inspection_check'] = False
+        st.session_state['offer_10_radon_inspection_value'] = ''
+        st.session_state['offer_10_radon_inspection_days'] = 0
+        st.session_state['offer_10_radon_inspection_days_string'] = ''
+        st.session_state['offer_10_septic_inspection_check'] = False
+        st.session_state['offer_10_septic_inspection_value'] = ''
+        st.session_state['offer_10_septic_inspection_days'] = 0
+        st.session_state['offer_10_septic_inspection_days_string'] = ''
+        st.session_state['offer_10_well_inspection_check'] = False
+        st.session_state['offer_10_well_inspection_value'] = ''
+        st.session_state['offer_10_well_inspection_days'] = 0
+        st.session_state['offer_10_well_inspection_days_string'] = ''
+        st.session_state['offer_10_financing_contingency_check'] = False
+        st.session_state['offer_10_financing_contingency_value'] = ''
+        st.session_state['offer_10_financing_contingency_days'] = 0
+        st.session_state['offer_10_financing_contingency_days_string'] = ''
+        st.session_state['offer_10_appraisal_contingency_check'] = False
+        st.session_state['offer_10_appraisal_contingency_value'] = ''
+        st.session_state['offer_10_appraisal_contingency_days'] = 0
+        st.session_state['offer_10_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_10_home_sale_contingency_check'] = False
+        st.session_state['offer_10_home_sale_contingency_value'] = ''
+        st.session_state['offer_10_home_sale_contingency_days'] = 0
+        st.session_state['offer_10_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_10_pre_occupancy_request'] = False
+        st.session_state['offer_10_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_10_pre_occupancy_date'] = date.today()
+        st.session_state['offer_10_post_occupancy_request'] = False
+        st.session_state['offer_10_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_10_post_occupancy_date'] = date.today()
+        # st.session_state['offer_10_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_11_name'] = 'Offer 11'
+        st.session_state['offer_11_name'] = ''
+        st.session_state['update_offer_11_settlement_date'] = date.today()
+        st.session_state['offer_11_settlement_date'] = ''
+        st.session_state['update_offer_11_settlement_company'] = ''
+        st.session_state['offer_11_settlement_company'] = ''
+        st.session_state['update_offer_11_amt'] = 0
+        st.session_state['offer_11_amt'] = 0
+        st.session_state['update_offer_11_emd_amt'] = 0
+        st.session_state['offer_11_emd_amt'] = 0
+        st.session_state['offer_11_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_11_down_pmt_pct'] = 0.0
+        st.session_state['offer_11_down_pmt_pct'] = 0.0
+        st.session_state['offer_11_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_11_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_11_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_11_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_11_home_inspection_check'] = False
+        st.session_state['offer_11_home_inspection_value'] = ''
+        st.session_state['offer_11_home_inspection_days'] = 0
+        st.session_state['offer_11_home_inspection_days_string'] = ''
+        st.session_state['offer_11_radon_inspection_check'] = False
+        st.session_state['offer_11_radon_inspection_value'] = ''
+        st.session_state['offer_11_radon_inspection_days'] = 0
+        st.session_state['offer_11_radon_inspection_days_string'] = ''
+        st.session_state['offer_11_septic_inspection_check'] = False
+        st.session_state['offer_11_septic_inspection_value'] = ''
+        st.session_state['offer_11_septic_inspection_days'] = 0
+        st.session_state['offer_11_septic_inspection_days_string'] = ''
+        st.session_state['offer_11_well_inspection_check'] = False
+        st.session_state['offer_11_well_inspection_value'] = ''
+        st.session_state['offer_11_well_inspection_days'] = 0
+        st.session_state['offer_11_well_inspection_days_string'] = ''
+        st.session_state['offer_11_financing_contingency_check'] = False
+        st.session_state['offer_11_financing_contingency_value'] = ''
+        st.session_state['offer_11_financing_contingency_days'] = 0
+        st.session_state['offer_11_financing_contingency_days_string'] = ''
+        st.session_state['offer_11_appraisal_contingency_check'] = False
+        st.session_state['offer_11_appraisal_contingency_value'] = ''
+        st.session_state['offer_11_appraisal_contingency_days'] = 0
+        st.session_state['offer_11_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_11_home_sale_contingency_check'] = False
+        st.session_state['offer_11_home_sale_contingency_value'] = ''
+        st.session_state['offer_11_home_sale_contingency_days'] = 0
+        st.session_state['offer_11_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_11_pre_occupancy_request'] = False
+        st.session_state['offer_11_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_11_pre_occupancy_date'] = date.today()
+        st.session_state['offer_11_post_occupancy_request'] = False
+        st.session_state['offer_11_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_11_post_occupancy_date'] = date.today()
+        # st.session_state['offer_11_update_post_occupancy_date'] = date.today()
+
+        st.session_state['update_offer_12_name'] = 'Offer 12'
+        st.session_state['offer_12_name'] = ''
+        st.session_state['update_offer_12_settlement_date'] = date.today()
+        st.session_state['offer_12_settlement_date'] = ''
+        st.session_state['update_offer_12_settlement_company'] = ''
+        st.session_state['offer_12_settlement_company'] = ''
+        st.session_state['update_offer_12_amt'] = 0
+        st.session_state['offer_12_amt'] = 0
+        st.session_state['update_offer_12_emd_amt'] = 0
+        st.session_state['offer_12_emd_amt'] = 0
+        st.session_state['offer_12_finance_type'] = 'Select Financing Type'
+        st.session_state['update_offer_12_down_pmt_pct'] = 0.0
+        st.session_state['offer_12_down_pmt_pct'] = 0.0
+        st.session_state['offer_12_closing_subsidy_radio'] = 'Percent of Offer Amt (%)'
+        st.session_state['offer_12_update_closing_subsidy_pct'] = 0.0
+        st.session_state['offer_12_closing_subsidy_flat_amt'] = 0
+        st.session_state['offer_12_closing_subsidy_amt'] = 0.0
+        st.session_state['offer_12_home_inspection_check'] = False
+        st.session_state['offer_12_home_inspection_value'] = ''
+        st.session_state['offer_12_home_inspection_days'] = 0
+        st.session_state['offer_12_home_inspection_days_string'] = ''
+        st.session_state['offer_12_radon_inspection_check'] = False
+        st.session_state['offer_12_radon_inspection_value'] = ''
+        st.session_state['offer_12_radon_inspection_days'] = 0
+        st.session_state['offer_12_radon_inspection_days_string'] = ''
+        st.session_state['offer_12_septic_inspection_check'] = False
+        st.session_state['offer_12_septic_inspection_value'] = ''
+        st.session_state['offer_12_septic_inspection_days'] = 0
+        st.session_state['offer_12_septic_inspection_days_string'] = ''
+        st.session_state['offer_12_well_inspection_check'] = False
+        st.session_state['offer_12_well_inspection_value'] = ''
+        st.session_state['offer_12_well_inspection_days'] = 0
+        st.session_state['offer_12_well_inspection_days_string'] = ''
+        st.session_state['offer_12_financing_contingency_check'] = False
+        st.session_state['offer_12_financing_contingency_value'] = ''
+        st.session_state['offer_12_financing_contingency_days'] = 0
+        st.session_state['offer_12_financing_contingency_days_string'] = ''
+        st.session_state['offer_12_appraisal_contingency_check'] = False
+        st.session_state['offer_12_appraisal_contingency_value'] = ''
+        st.session_state['offer_12_appraisal_contingency_days'] = 0
+        st.session_state['offer_12_appraisal_contingency_days_string'] = ''
+        st.session_state['offer_12_home_sale_contingency_check'] = False
+        st.session_state['offer_12_home_sale_contingency_value'] = ''
+        st.session_state['offer_12_home_sale_contingency_days'] = 0
+        st.session_state['offer_12_home_sale_contingency_days_string'] = ''
+        st.session_state['offer_12_pre_occupancy_request'] = False
+        st.session_state['offer_12_pre_occupancy_credit_to_seller_amt'] = 0
+        st.session_state['offer_12_pre_occupancy_date'] = date.today()
+        st.session_state['offer_12_post_occupancy_request'] = False
+        st.session_state['offer_12_post_occupancy_cost_to_seller_amt'] = 0
+        st.session_state['offer_12_post_occupancy_date'] = date.today()
+        # st.session_state['offer_12_update_post_occupancy_date'] = date.today()
+
 
     contingencies = ['Home Inspection', 'Financing', 'Appraisal', 'Pest Inspection']
     financing_types = ['Select Financing Type', 'Cash', 'Conventional', 'FHA', 'VA', 'USDA', 'Other']
@@ -396,9 +820,6 @@ def main():
         if x == 0:
             string_value = ''
         return string_value
-
-    # def days_int_to_string_false(x):
-    #     pass
 
 
     def update_offer_1_info_form():
@@ -502,7 +923,6 @@ def main():
             st.session_state.offer_2_closing_subsidy_amt = st.session_state.offer_2_closing_subsidy_pct * st.session_state.offer_2_amt
         else:
             st.session_state.offer_2_closing_subsidy_amt = st.session_state.offer_2_closing_subsidy_flat_amt
-
         if st.session_state.offer_2_home_inspection_check:
             st.session_state.offer_2_home_inspection_value = 'Y'
             st.session_state.offer_2_home_inspection_days = st.session_state.offer_2_home_inspection_days
@@ -511,7 +931,6 @@ def main():
             st.session_state.offer_2_home_inspection_value = ''
             st.session_state.offer_2_home_inspection_days = 0
             st.session_state.offer_2_home_inspection_days_string = days_int_to_string(st.session_state.offer_2_home_inspection_days)
-
         if st.session_state.offer_2_radon_inspection_check:
             st.session_state.offer_2_radon_inspection_value = 'Y'
             st.session_state.offer_2_radon_inspection_days = st.session_state.offer_2_radon_inspection_days
@@ -520,7 +939,6 @@ def main():
             st.session_state.offer_2_radon_inspection_value = ''
             st.session_state.offer_2_radon_inspection_days = 0
             st.session_state.offer_2_radon_inspection_days_string = days_int_to_string(st.session_state.offer_2_radon_inspection_days)
-
         if st.session_state.offer_2_septic_inspection_check:
             st.session_state.offer_2_septic_inspection_value = 'Y'
             st.session_state.offer_2_septic_inspection_days = st.session_state.offer_2_septic_inspection_days
@@ -529,7 +947,6 @@ def main():
             st.session_state.offer_2_septic_inspection_value = ''
             st.session_state.offer_2_septic_inspection_days = 0
             st.session_state.offer_2_septic_inspection_days_string = days_int_to_string(st.session_state.offer_2_septic_inspection_days)
-
         if st.session_state.offer_2_well_inspection_check:
             st.session_state.offer_2_well_inspection_value = 'Y'
             st.session_state.offer_2_well_inspection_days = st.session_state.offer_2_well_inspection_days
@@ -538,7 +955,6 @@ def main():
             st.session_state.offer_2_well_inspection_value = ''
             st.session_state.offer_2_well_inspection_days = 0
             st.session_state.offer_2_well_inspection_days_string = days_int_to_string(st.session_state.offer_2_well_inspection_days)
-
         if st.session_state.offer_2_financing_contingency_check:
             st.session_state.offer_2_financing_contingency_value = 'Y'
             st.session_state.offer_2_financing_contingency_days = st.session_state.offer_2_financing_contingency_days
@@ -547,7 +963,6 @@ def main():
             st.session_state.offer_2_financing_contingency_value = ''
             st.session_state.offer_2_financing_contingency_days = 0
             st.session_state.offer_2_financing_contingency_days_string = days_int_to_string(st.session_state.offer_2_financing_contingency_days)
-
         if st.session_state.offer_2_appraisal_contingency_check:
             st.session_state.offer_2_appraisal_contingency_value = 'Y'
             st.session_state.offer_2_appraisal_contingency_days = st.session_state.offer_2_appraisal_contingency_days
@@ -556,7 +971,6 @@ def main():
             st.session_state.offer_2_appraisal_contingency_value = ''
             st.session_state.offer_2_appraisal_contingency_days = 0
             st.session_state.offer_2_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_2_appraisal_contingency_days)
-
         if st.session_state.offer_2_home_sale_contingency_check:
             st.session_state.offer_2_home_sale_contingency_value = 'Y'
             st.session_state.offer_2_home_sale_contingency_days = st.session_state.offer_2_home_inspection_days
@@ -565,12 +979,10 @@ def main():
             st.session_state.offer_2_home_sale_contingency_value = ''
             st.session_state.offer_2_home_sale_contingency_days = 0
             st.session_state.offer_2_home_sale_contingency_days_string = days_int_to_string(st.session_state.offer_2_home_sale_contingency_days)
-
         if st.session_state.offer_2_pre_occupancy_request:
             st.session_state.offer_2_pre_occupancy_date = st.session_state.offer_2_update_pre_occupancy_date
         else:
             st.session_state.offer_2_pre_occupancy_date = ''
-
         if st.session_state.offer_2_post_occupancy_request:
             st.session_state.offer_2_post_occupancy_date = st.session_state.offer_2_update_post_occupancy_date
         else:
@@ -751,6 +1163,710 @@ def main():
         else:
             st.session_state.offer_4_post_occupancy_date = ''
 
+    def update_offer_5_info_form():
+        st.session_state.offer_5_name = st.session_state.update_offer_5_name
+        st.session_state.offer_5_settlement_date = st.session_state.update_offer_5_settlement_date
+        st.session_state.offer_5_settlement_company = st.session_state.update_offer_5_settlement_company
+        st.session_state.offer_5_amt = st.session_state.update_offer_5_amt
+        st.session_state.offer_5_emd_amt = st.session_state.update_offer_5_emd_amt
+        st.session_state.offer_5_down_pmt_pct = st.session_state.update_offer_5_down_pmt_pct
+        st.session_state.offer_5_down_pmt_pct = st.session_state.offer_5_down_pmt_pct / 100
+        st.session_state.offer_5_closing_subsidy_pct = st.session_state.offer_5_update_closing_subsidy_pct / 100
+        if st.session_state.offer_5_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_5_closing_subsidy_amt = st.session_state.offer_5_closing_subsidy_pct * st.session_state.offer_5_amt
+        else:
+            st.session_state.offer_5_closing_subsidy_amt = st.session_state.offer_5_closing_subsidy_flat_amt
+
+        if st.session_state.offer_5_home_inspection_check:
+            st.session_state.offer_5_home_inspection_value = 'Y'
+            st.session_state.offer_5_home_inspection_days = st.session_state.offer_5_home_inspection_days
+            st.session_state.offer_5_home_inspection_days_string = st.session_state.offer_5_home_inspection_days
+        else:
+            st.session_state.offer_5_home_inspection_value = ''
+            st.session_state.offer_5_home_inspection_days = 0
+            st.session_state.offer_5_home_inspection_days_string = days_int_to_string(st.session_state.offer_5_home_inspection_days)
+
+        if st.session_state.offer_5_radon_inspection_check:
+            st.session_state.offer_5_radon_inspection_value = 'Y'
+            st.session_state.offer_5_radon_inspection_days = st.session_state.offer_5_radon_inspection_days
+            st.session_state.offer_5_radon_inspection_days_string = st.session_state.offer_5_radon_inspection_days
+        else:
+            st.session_state.offer_5_radon_inspection_value = ''
+            st.session_state.offer_5_radon_inspection_days = 0
+            st.session_state.offer_5_radon_inspection_days_string = days_int_to_string(st.session_state.offer_5_radon_inspection_days)
+
+        if st.session_state.offer_5_septic_inspection_check:
+            st.session_state.offer_5_septic_inspection_value = 'Y'
+            st.session_state.offer_5_septic_inspection_days = st.session_state.offer_5_septic_inspection_days
+            st.session_state.offer_5_septic_inspection_days_string = st.session_state.offer_5_septic_inspection_days
+        else:
+            st.session_state.offer_5_septic_inspection_value = ''
+            st.session_state.offer_5_septic_inspection_days = 0
+            st.session_state.offer_5_septic_inspection_days_string = days_int_to_string(st.session_state.offer_5_septic_inspection_days)
+
+        if st.session_state.offer_5_well_inspection_check:
+            st.session_state.offer_5_well_inspection_value = 'Y'
+            st.session_state.offer_5_well_inspection_days = st.session_state.offer_5_well_inspection_days
+            st.session_state.offer_5_well_inspection_days_string = st.session_state.offer_5_well_inspection_days
+        else:
+            st.session_state.offer_5_well_inspection_value = ''
+            st.session_state.offer_5_well_inspection_days = 0
+            st.session_state.offer_5_well_inspection_days_string = days_int_to_string(st.session_state.offer_5_well_inspection_days)
+
+        if st.session_state.offer_5_financing_contingency_check:
+            st.session_state.offer_5_financing_contingency_value = 'Y'
+            st.session_state.offer_5_financing_contingency_days = st.session_state.offer_5_financing_contingency_days
+            st.session_state.offer_5_financing_contingency_days_string = st.session_state.offer_5_financing_contingency_days
+        else:
+            st.session_state.offer_5_financing_contingency_value = ''
+            st.session_state.offer_5_financing_contingency_days = 0
+            st.session_state.offer_5_financing_contingency_days_string = days_int_to_string(st.session_state.offer_5_financing_contingency_days)
+
+        if st.session_state.offer_5_appraisal_contingency_check:
+            st.session_state.offer_5_appraisal_contingency_value = 'Y'
+            st.session_state.offer_5_appraisal_contingency_days = st.session_state.offer_5_appraisal_contingency_days
+            st.session_state.offer_5_appraisal_contingency_days_string = st.session_state.offer_5_appraisal_contingency_days
+        else:
+            st.session_state.offer_5_appraisal_contingency_value = ''
+            st.session_state.offer_5_appraisal_contingency_days = 0
+            st.session_state.offer_5_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_5_appraisal_contingency_days)
+
+        if st.session_state.offer_5_home_sale_contingency_check:
+            st.session_state.offer_5_home_sale_contingency_value = 'Y'
+            st.session_state.offer_5_home_sale_contingency_days = st.session_state.offer_5_home_inspection_days
+            st.session_state.offer_5_home_sale_contingency_days_string = st.session_state.offer_5_home_sale_contingency_days
+        else:
+            st.session_state.offer_5_home_sale_contingency_value = ''
+            st.session_state.offer_5_home_sale_contingency_days = 0
+            st.session_state.offer_5_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_5_home_sale_contingency_days)
+
+        if st.session_state.offer_5_pre_occupancy_request:
+            st.session_state.offer_5_pre_occupancy_date = st.session_state.offer_5_update_pre_occupancy_date
+        else:
+            st.session_state.offer_5_pre_occupancy_date = ''
+
+        if st.session_state.offer_5_post_occupancy_request:
+            st.session_state.offer_5_post_occupancy_date = st.session_state.offer_5_update_post_occupancy_date
+        else:
+            st.session_state.offer_5_post_occupancy_date = ''
+            
+    def update_offer_6_info_form():
+        st.session_state.offer_6_name = st.session_state.update_offer_6_name
+        st.session_state.offer_6_settlement_date = st.session_state.update_offer_6_settlement_date
+        st.session_state.offer_6_settlement_company = st.session_state.update_offer_6_settlement_company
+        st.session_state.offer_6_amt = st.session_state.update_offer_6_amt
+        st.session_state.offer_6_emd_amt = st.session_state.update_offer_6_emd_amt
+        st.session_state.offer_6_down_pmt_pct = st.session_state.update_offer_6_down_pmt_pct
+        st.session_state.offer_6_down_pmt_pct = st.session_state.offer_6_down_pmt_pct / 100
+        st.session_state.offer_6_closing_subsidy_pct = st.session_state.offer_6_update_closing_subsidy_pct / 100
+        if st.session_state.offer_6_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_6_closing_subsidy_amt = st.session_state.offer_6_closing_subsidy_pct * st.session_state.offer_6_amt
+        else:
+            st.session_state.offer_6_closing_subsidy_amt = st.session_state.offer_6_closing_subsidy_flat_amt
+
+        if st.session_state.offer_6_home_inspection_check:
+            st.session_state.offer_6_home_inspection_value = 'Y'
+            st.session_state.offer_6_home_inspection_days = st.session_state.offer_6_home_inspection_days
+            st.session_state.offer_6_home_inspection_days_string = st.session_state.offer_6_home_inspection_days
+        else:
+            st.session_state.offer_6_home_inspection_value = ''
+            st.session_state.offer_6_home_inspection_days = 0
+            st.session_state.offer_6_home_inspection_days_string = days_int_to_string(st.session_state.offer_6_home_inspection_days)
+
+        if st.session_state.offer_6_radon_inspection_check:
+            st.session_state.offer_6_radon_inspection_value = 'Y'
+            st.session_state.offer_6_radon_inspection_days = st.session_state.offer_6_radon_inspection_days
+            st.session_state.offer_6_radon_inspection_days_string = st.session_state.offer_6_radon_inspection_days
+        else:
+            st.session_state.offer_6_radon_inspection_value = ''
+            st.session_state.offer_6_radon_inspection_days = 0
+            st.session_state.offer_6_radon_inspection_days_string = days_int_to_string(st.session_state.offer_6_radon_inspection_days)
+
+        if st.session_state.offer_6_septic_inspection_check:
+            st.session_state.offer_6_septic_inspection_value = 'Y'
+            st.session_state.offer_6_septic_inspection_days = st.session_state.offer_6_septic_inspection_days
+            st.session_state.offer_6_septic_inspection_days_string = st.session_state.offer_6_septic_inspection_days
+        else:
+            st.session_state.offer_6_septic_inspection_value = ''
+            st.session_state.offer_6_septic_inspection_days = 0
+            st.session_state.offer_6_septic_inspection_days_string = days_int_to_string(st.session_state.offer_6_septic_inspection_days)
+
+        if st.session_state.offer_6_well_inspection_check:
+            st.session_state.offer_6_well_inspection_value = 'Y'
+            st.session_state.offer_6_well_inspection_days = st.session_state.offer_6_well_inspection_days
+            st.session_state.offer_6_well_inspection_days_string = st.session_state.offer_6_well_inspection_days
+        else:
+            st.session_state.offer_6_well_inspection_value = ''
+            st.session_state.offer_6_well_inspection_days = 0
+            st.session_state.offer_6_well_inspection_days_string = days_int_to_string(st.session_state.offer_6_well_inspection_days)
+
+        if st.session_state.offer_6_financing_contingency_check:
+            st.session_state.offer_6_financing_contingency_value = 'Y'
+            st.session_state.offer_6_financing_contingency_days = st.session_state.offer_6_financing_contingency_days
+            st.session_state.offer_6_financing_contingency_days_string = st.session_state.offer_6_financing_contingency_days
+        else:
+            st.session_state.offer_6_financing_contingency_value = ''
+            st.session_state.offer_6_financing_contingency_days = 0
+            st.session_state.offer_6_financing_contingency_days_string = days_int_to_string(st.session_state.offer_6_financing_contingency_days)
+
+        if st.session_state.offer_6_appraisal_contingency_check:
+            st.session_state.offer_6_appraisal_contingency_value = 'Y'
+            st.session_state.offer_6_appraisal_contingency_days = st.session_state.offer_6_appraisal_contingency_days
+            st.session_state.offer_6_appraisal_contingency_days_string = st.session_state.offer_6_appraisal_contingency_days
+        else:
+            st.session_state.offer_6_appraisal_contingency_value = ''
+            st.session_state.offer_6_appraisal_contingency_days = 0
+            st.session_state.offer_6_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_6_appraisal_contingency_days)
+
+        if st.session_state.offer_6_home_sale_contingency_check:
+            st.session_state.offer_6_home_sale_contingency_value = 'Y'
+            st.session_state.offer_6_home_sale_contingency_days = st.session_state.offer_6_home_inspection_days
+            st.session_state.offer_6_home_sale_contingency_days_string = st.session_state.offer_6_home_sale_contingency_days
+        else:
+            st.session_state.offer_6_home_sale_contingency_value = ''
+            st.session_state.offer_6_home_sale_contingency_days = 0
+            st.session_state.offer_6_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_6_home_sale_contingency_days)
+
+        if st.session_state.offer_6_pre_occupancy_request:
+            st.session_state.offer_6_pre_occupancy_date = st.session_state.offer_6_update_pre_occupancy_date
+        else:
+            st.session_state.offer_6_pre_occupancy_date = ''
+
+        if st.session_state.offer_6_post_occupancy_request:
+            st.session_state.offer_6_post_occupancy_date = st.session_state.offer_6_update_post_occupancy_date
+        else:
+            st.session_state.offer_6_post_occupancy_date = ''
+            
+    def update_offer_7_info_form():
+        st.session_state.offer_7_name = st.session_state.update_offer_7_name
+        st.session_state.offer_7_settlement_date = st.session_state.update_offer_7_settlement_date
+        st.session_state.offer_7_settlement_company = st.session_state.update_offer_7_settlement_company
+        st.session_state.offer_7_amt = st.session_state.update_offer_7_amt
+        st.session_state.offer_7_emd_amt = st.session_state.update_offer_7_emd_amt
+        st.session_state.offer_7_down_pmt_pct = st.session_state.update_offer_7_down_pmt_pct
+        st.session_state.offer_7_down_pmt_pct = st.session_state.offer_7_down_pmt_pct / 100
+        st.session_state.offer_7_closing_subsidy_pct = st.session_state.offer_7_update_closing_subsidy_pct / 100
+        if st.session_state.offer_7_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_7_closing_subsidy_amt = st.session_state.offer_7_closing_subsidy_pct * st.session_state.offer_7_amt
+        else:
+            st.session_state.offer_7_closing_subsidy_amt = st.session_state.offer_7_closing_subsidy_flat_amt
+
+        if st.session_state.offer_7_home_inspection_check:
+            st.session_state.offer_7_home_inspection_value = 'Y'
+            st.session_state.offer_7_home_inspection_days = st.session_state.offer_7_home_inspection_days
+            st.session_state.offer_7_home_inspection_days_string = st.session_state.offer_7_home_inspection_days
+        else:
+            st.session_state.offer_7_home_inspection_value = ''
+            st.session_state.offer_7_home_inspection_days = 0
+            st.session_state.offer_7_home_inspection_days_string = days_int_to_string(st.session_state.offer_7_home_inspection_days)
+
+        if st.session_state.offer_7_radon_inspection_check:
+            st.session_state.offer_7_radon_inspection_value = 'Y'
+            st.session_state.offer_7_radon_inspection_days = st.session_state.offer_7_radon_inspection_days
+            st.session_state.offer_7_radon_inspection_days_string = st.session_state.offer_7_radon_inspection_days
+        else:
+            st.session_state.offer_7_radon_inspection_value = ''
+            st.session_state.offer_7_radon_inspection_days = 0
+            st.session_state.offer_7_radon_inspection_days_string = days_int_to_string(st.session_state.offer_7_radon_inspection_days)
+
+        if st.session_state.offer_7_septic_inspection_check:
+            st.session_state.offer_7_septic_inspection_value = 'Y'
+            st.session_state.offer_7_septic_inspection_days = st.session_state.offer_7_septic_inspection_days
+            st.session_state.offer_7_septic_inspection_days_string = st.session_state.offer_7_septic_inspection_days
+        else:
+            st.session_state.offer_7_septic_inspection_value = ''
+            st.session_state.offer_7_septic_inspection_days = 0
+            st.session_state.offer_7_septic_inspection_days_string = days_int_to_string(st.session_state.offer_7_septic_inspection_days)
+
+        if st.session_state.offer_7_well_inspection_check:
+            st.session_state.offer_7_well_inspection_value = 'Y'
+            st.session_state.offer_7_well_inspection_days = st.session_state.offer_7_well_inspection_days
+            st.session_state.offer_7_well_inspection_days_string = st.session_state.offer_7_well_inspection_days
+        else:
+            st.session_state.offer_7_well_inspection_value = ''
+            st.session_state.offer_7_well_inspection_days = 0
+            st.session_state.offer_7_well_inspection_days_string = days_int_to_string(st.session_state.offer_7_well_inspection_days)
+
+        if st.session_state.offer_7_financing_contingency_check:
+            st.session_state.offer_7_financing_contingency_value = 'Y'
+            st.session_state.offer_7_financing_contingency_days = st.session_state.offer_7_financing_contingency_days
+            st.session_state.offer_7_financing_contingency_days_string = st.session_state.offer_7_financing_contingency_days
+        else:
+            st.session_state.offer_7_financing_contingency_value = ''
+            st.session_state.offer_7_financing_contingency_days = 0
+            st.session_state.offer_7_financing_contingency_days_string = days_int_to_string(st.session_state.offer_7_financing_contingency_days)
+
+        if st.session_state.offer_7_appraisal_contingency_check:
+            st.session_state.offer_7_appraisal_contingency_value = 'Y'
+            st.session_state.offer_7_appraisal_contingency_days = st.session_state.offer_7_appraisal_contingency_days
+            st.session_state.offer_7_appraisal_contingency_days_string = st.session_state.offer_7_appraisal_contingency_days
+        else:
+            st.session_state.offer_7_appraisal_contingency_value = ''
+            st.session_state.offer_7_appraisal_contingency_days = 0
+            st.session_state.offer_7_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_7_appraisal_contingency_days)
+
+        if st.session_state.offer_7_home_sale_contingency_check:
+            st.session_state.offer_7_home_sale_contingency_value = 'Y'
+            st.session_state.offer_7_home_sale_contingency_days = st.session_state.offer_7_home_inspection_days
+            st.session_state.offer_7_home_sale_contingency_days_string = st.session_state.offer_7_home_sale_contingency_days
+        else:
+            st.session_state.offer_7_home_sale_contingency_value = ''
+            st.session_state.offer_7_home_sale_contingency_days = 0
+            st.session_state.offer_7_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_7_home_sale_contingency_days)
+
+        if st.session_state.offer_7_pre_occupancy_request:
+            st.session_state.offer_7_pre_occupancy_date = st.session_state.offer_7_update_pre_occupancy_date
+        else:
+            st.session_state.offer_7_pre_occupancy_date = ''
+
+        if st.session_state.offer_7_post_occupancy_request:
+            st.session_state.offer_7_post_occupancy_date = st.session_state.offer_7_update_post_occupancy_date
+        else:
+            st.session_state.offer_7_post_occupancy_date = ''
+            
+    def update_offer_8_info_form():
+        st.session_state.offer_8_name = st.session_state.update_offer_8_name
+        st.session_state.offer_8_settlement_date = st.session_state.update_offer_8_settlement_date
+        st.session_state.offer_8_settlement_company = st.session_state.update_offer_8_settlement_company
+        st.session_state.offer_8_amt = st.session_state.update_offer_8_amt
+        st.session_state.offer_8_emd_amt = st.session_state.update_offer_8_emd_amt
+        st.session_state.offer_8_down_pmt_pct = st.session_state.update_offer_8_down_pmt_pct
+        st.session_state.offer_8_down_pmt_pct = st.session_state.offer_8_down_pmt_pct / 100
+        st.session_state.offer_8_closing_subsidy_pct = st.session_state.offer_8_update_closing_subsidy_pct / 100
+        if st.session_state.offer_8_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_8_closing_subsidy_amt = st.session_state.offer_8_closing_subsidy_pct * st.session_state.offer_8_amt
+        else:
+            st.session_state.offer_8_closing_subsidy_amt = st.session_state.offer_8_closing_subsidy_flat_amt
+
+        if st.session_state.offer_8_home_inspection_check:
+            st.session_state.offer_8_home_inspection_value = 'Y'
+            st.session_state.offer_8_home_inspection_days = st.session_state.offer_8_home_inspection_days
+            st.session_state.offer_8_home_inspection_days_string = st.session_state.offer_8_home_inspection_days
+        else:
+            st.session_state.offer_8_home_inspection_value = ''
+            st.session_state.offer_8_home_inspection_days = 0
+            st.session_state.offer_8_home_inspection_days_string = days_int_to_string(st.session_state.offer_8_home_inspection_days)
+
+        if st.session_state.offer_8_radon_inspection_check:
+            st.session_state.offer_8_radon_inspection_value = 'Y'
+            st.session_state.offer_8_radon_inspection_days = st.session_state.offer_8_radon_inspection_days
+            st.session_state.offer_8_radon_inspection_days_string = st.session_state.offer_8_radon_inspection_days
+        else:
+            st.session_state.offer_8_radon_inspection_value = ''
+            st.session_state.offer_8_radon_inspection_days = 0
+            st.session_state.offer_8_radon_inspection_days_string = days_int_to_string(st.session_state.offer_8_radon_inspection_days)
+
+        if st.session_state.offer_8_septic_inspection_check:
+            st.session_state.offer_8_septic_inspection_value = 'Y'
+            st.session_state.offer_8_septic_inspection_days = st.session_state.offer_8_septic_inspection_days
+            st.session_state.offer_8_septic_inspection_days_string = st.session_state.offer_8_septic_inspection_days
+        else:
+            st.session_state.offer_8_septic_inspection_value = ''
+            st.session_state.offer_8_septic_inspection_days = 0
+            st.session_state.offer_8_septic_inspection_days_string = days_int_to_string(st.session_state.offer_8_septic_inspection_days)
+
+        if st.session_state.offer_8_well_inspection_check:
+            st.session_state.offer_8_well_inspection_value = 'Y'
+            st.session_state.offer_8_well_inspection_days = st.session_state.offer_8_well_inspection_days
+            st.session_state.offer_8_well_inspection_days_string = st.session_state.offer_8_well_inspection_days
+        else:
+            st.session_state.offer_8_well_inspection_value = ''
+            st.session_state.offer_8_well_inspection_days = 0
+            st.session_state.offer_8_well_inspection_days_string = days_int_to_string(st.session_state.offer_8_well_inspection_days)
+
+        if st.session_state.offer_8_financing_contingency_check:
+            st.session_state.offer_8_financing_contingency_value = 'Y'
+            st.session_state.offer_8_financing_contingency_days = st.session_state.offer_8_financing_contingency_days
+            st.session_state.offer_8_financing_contingency_days_string = st.session_state.offer_8_financing_contingency_days
+        else:
+            st.session_state.offer_8_financing_contingency_value = ''
+            st.session_state.offer_8_financing_contingency_days = 0
+            st.session_state.offer_8_financing_contingency_days_string = days_int_to_string(st.session_state.offer_8_financing_contingency_days)
+
+        if st.session_state.offer_8_appraisal_contingency_check:
+            st.session_state.offer_8_appraisal_contingency_value = 'Y'
+            st.session_state.offer_8_appraisal_contingency_days = st.session_state.offer_8_appraisal_contingency_days
+            st.session_state.offer_8_appraisal_contingency_days_string = st.session_state.offer_8_appraisal_contingency_days
+        else:
+            st.session_state.offer_8_appraisal_contingency_value = ''
+            st.session_state.offer_8_appraisal_contingency_days = 0
+            st.session_state.offer_8_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_8_appraisal_contingency_days)
+
+        if st.session_state.offer_8_home_sale_contingency_check:
+            st.session_state.offer_8_home_sale_contingency_value = 'Y'
+            st.session_state.offer_8_home_sale_contingency_days = st.session_state.offer_8_home_inspection_days
+            st.session_state.offer_8_home_sale_contingency_days_string = st.session_state.offer_8_home_sale_contingency_days
+        else:
+            st.session_state.offer_8_home_sale_contingency_value = ''
+            st.session_state.offer_8_home_sale_contingency_days = 0
+            st.session_state.offer_8_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_8_home_sale_contingency_days)
+
+        if st.session_state.offer_8_pre_occupancy_request:
+            st.session_state.offer_8_pre_occupancy_date = st.session_state.offer_8_update_pre_occupancy_date
+        else:
+            st.session_state.offer_8_pre_occupancy_date = ''
+
+        if st.session_state.offer_8_post_occupancy_request:
+            st.session_state.offer_8_post_occupancy_date = st.session_state.offer_8_update_post_occupancy_date
+        else:
+            st.session_state.offer_8_post_occupancy_date = ''
+            
+    def update_offer_9_info_form():
+        st.session_state.offer_9_name = st.session_state.update_offer_9_name
+        st.session_state.offer_9_settlement_date = st.session_state.update_offer_9_settlement_date
+        st.session_state.offer_9_settlement_company = st.session_state.update_offer_9_settlement_company
+        st.session_state.offer_9_amt = st.session_state.update_offer_9_amt
+        st.session_state.offer_9_emd_amt = st.session_state.update_offer_9_emd_amt
+        st.session_state.offer_9_down_pmt_pct = st.session_state.update_offer_9_down_pmt_pct
+        st.session_state.offer_9_down_pmt_pct = st.session_state.offer_9_down_pmt_pct / 100
+        st.session_state.offer_9_closing_subsidy_pct = st.session_state.offer_9_update_closing_subsidy_pct / 100
+        if st.session_state.offer_9_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_9_closing_subsidy_amt = st.session_state.offer_9_closing_subsidy_pct * st.session_state.offer_9_amt
+        else:
+            st.session_state.offer_9_closing_subsidy_amt = st.session_state.offer_9_closing_subsidy_flat_amt
+
+        if st.session_state.offer_9_home_inspection_check:
+            st.session_state.offer_9_home_inspection_value = 'Y'
+            st.session_state.offer_9_home_inspection_days = st.session_state.offer_9_home_inspection_days
+            st.session_state.offer_9_home_inspection_days_string = st.session_state.offer_9_home_inspection_days
+        else:
+            st.session_state.offer_9_home_inspection_value = ''
+            st.session_state.offer_9_home_inspection_days = 0
+            st.session_state.offer_9_home_inspection_days_string = days_int_to_string(st.session_state.offer_9_home_inspection_days)
+
+        if st.session_state.offer_9_radon_inspection_check:
+            st.session_state.offer_9_radon_inspection_value = 'Y'
+            st.session_state.offer_9_radon_inspection_days = st.session_state.offer_9_radon_inspection_days
+            st.session_state.offer_9_radon_inspection_days_string = st.session_state.offer_9_radon_inspection_days
+        else:
+            st.session_state.offer_9_radon_inspection_value = ''
+            st.session_state.offer_9_radon_inspection_days = 0
+            st.session_state.offer_9_radon_inspection_days_string = days_int_to_string(st.session_state.offer_9_radon_inspection_days)
+
+        if st.session_state.offer_9_septic_inspection_check:
+            st.session_state.offer_9_septic_inspection_value = 'Y'
+            st.session_state.offer_9_septic_inspection_days = st.session_state.offer_9_septic_inspection_days
+            st.session_state.offer_9_septic_inspection_days_string = st.session_state.offer_9_septic_inspection_days
+        else:
+            st.session_state.offer_9_septic_inspection_value = ''
+            st.session_state.offer_9_septic_inspection_days = 0
+            st.session_state.offer_9_septic_inspection_days_string = days_int_to_string(st.session_state.offer_9_septic_inspection_days)
+
+        if st.session_state.offer_9_well_inspection_check:
+            st.session_state.offer_9_well_inspection_value = 'Y'
+            st.session_state.offer_9_well_inspection_days = st.session_state.offer_9_well_inspection_days
+            st.session_state.offer_9_well_inspection_days_string = st.session_state.offer_9_well_inspection_days
+        else:
+            st.session_state.offer_9_well_inspection_value = ''
+            st.session_state.offer_9_well_inspection_days = 0
+            st.session_state.offer_9_well_inspection_days_string = days_int_to_string(st.session_state.offer_9_well_inspection_days)
+
+        if st.session_state.offer_9_financing_contingency_check:
+            st.session_state.offer_9_financing_contingency_value = 'Y'
+            st.session_state.offer_9_financing_contingency_days = st.session_state.offer_9_financing_contingency_days
+            st.session_state.offer_9_financing_contingency_days_string = st.session_state.offer_9_financing_contingency_days
+        else:
+            st.session_state.offer_9_financing_contingency_value = ''
+            st.session_state.offer_9_financing_contingency_days = 0
+            st.session_state.offer_9_financing_contingency_days_string = days_int_to_string(st.session_state.offer_9_financing_contingency_days)
+
+        if st.session_state.offer_9_appraisal_contingency_check:
+            st.session_state.offer_9_appraisal_contingency_value = 'Y'
+            st.session_state.offer_9_appraisal_contingency_days = st.session_state.offer_9_appraisal_contingency_days
+            st.session_state.offer_9_appraisal_contingency_days_string = st.session_state.offer_9_appraisal_contingency_days
+        else:
+            st.session_state.offer_9_appraisal_contingency_value = ''
+            st.session_state.offer_9_appraisal_contingency_days = 0
+            st.session_state.offer_9_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_9_appraisal_contingency_days)
+
+        if st.session_state.offer_9_home_sale_contingency_check:
+            st.session_state.offer_9_home_sale_contingency_value = 'Y'
+            st.session_state.offer_9_home_sale_contingency_days = st.session_state.offer_9_home_inspection_days
+            st.session_state.offer_9_home_sale_contingency_days_string = st.session_state.offer_9_home_sale_contingency_days
+        else:
+            st.session_state.offer_9_home_sale_contingency_value = ''
+            st.session_state.offer_9_home_sale_contingency_days = 0
+            st.session_state.offer_9_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_9_home_sale_contingency_days)
+
+        if st.session_state.offer_9_pre_occupancy_request:
+            st.session_state.offer_9_pre_occupancy_date = st.session_state.offer_9_update_pre_occupancy_date
+        else:
+            st.session_state.offer_9_pre_occupancy_date = ''
+
+        if st.session_state.offer_9_post_occupancy_request:
+            st.session_state.offer_9_post_occupancy_date = st.session_state.offer_9_update_post_occupancy_date
+        else:
+            st.session_state.offer_9_post_occupancy_date = ''
+            
+    def update_offer_10_info_form():
+        st.session_state.offer_10_name = st.session_state.update_offer_10_name
+        st.session_state.offer_10_settlement_date = st.session_state.update_offer_10_settlement_date
+        st.session_state.offer_10_settlement_company = st.session_state.update_offer_10_settlement_company
+        st.session_state.offer_10_amt = st.session_state.update_offer_10_amt
+        st.session_state.offer_10_emd_amt = st.session_state.update_offer_10_emd_amt
+        st.session_state.offer_10_down_pmt_pct = st.session_state.update_offer_10_down_pmt_pct
+        st.session_state.offer_10_down_pmt_pct = st.session_state.offer_10_down_pmt_pct / 100
+        st.session_state.offer_10_closing_subsidy_pct = st.session_state.offer_10_update_closing_subsidy_pct / 100
+        if st.session_state.offer_10_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_10_closing_subsidy_amt = st.session_state.offer_10_closing_subsidy_pct * st.session_state.offer_10_amt
+        else:
+            st.session_state.offer_10_closing_subsidy_amt = st.session_state.offer_10_closing_subsidy_flat_amt
+
+        if st.session_state.offer_10_home_inspection_check:
+            st.session_state.offer_10_home_inspection_value = 'Y'
+            st.session_state.offer_10_home_inspection_days = st.session_state.offer_10_home_inspection_days
+            st.session_state.offer_10_home_inspection_days_string = st.session_state.offer_10_home_inspection_days
+        else:
+            st.session_state.offer_10_home_inspection_value = ''
+            st.session_state.offer_10_home_inspection_days = 0
+            st.session_state.offer_10_home_inspection_days_string = days_int_to_string(st.session_state.offer_10_home_inspection_days)
+
+        if st.session_state.offer_10_radon_inspection_check:
+            st.session_state.offer_10_radon_inspection_value = 'Y'
+            st.session_state.offer_10_radon_inspection_days = st.session_state.offer_10_radon_inspection_days
+            st.session_state.offer_10_radon_inspection_days_string = st.session_state.offer_10_radon_inspection_days
+        else:
+            st.session_state.offer_10_radon_inspection_value = ''
+            st.session_state.offer_10_radon_inspection_days = 0
+            st.session_state.offer_10_radon_inspection_days_string = days_int_to_string(st.session_state.offer_10_radon_inspection_days)
+
+        if st.session_state.offer_10_septic_inspection_check:
+            st.session_state.offer_10_septic_inspection_value = 'Y'
+            st.session_state.offer_10_septic_inspection_days = st.session_state.offer_10_septic_inspection_days
+            st.session_state.offer_10_septic_inspection_days_string = st.session_state.offer_10_septic_inspection_days
+        else:
+            st.session_state.offer_10_septic_inspection_value = ''
+            st.session_state.offer_10_septic_inspection_days = 0
+            st.session_state.offer_10_septic_inspection_days_string = days_int_to_string(st.session_state.offer_10_septic_inspection_days)
+
+        if st.session_state.offer_10_well_inspection_check:
+            st.session_state.offer_10_well_inspection_value = 'Y'
+            st.session_state.offer_10_well_inspection_days = st.session_state.offer_10_well_inspection_days
+            st.session_state.offer_10_well_inspection_days_string = st.session_state.offer_10_well_inspection_days
+        else:
+            st.session_state.offer_10_well_inspection_value = ''
+            st.session_state.offer_10_well_inspection_days = 0
+            st.session_state.offer_10_well_inspection_days_string = days_int_to_string(st.session_state.offer_10_well_inspection_days)
+
+        if st.session_state.offer_10_financing_contingency_check:
+            st.session_state.offer_10_financing_contingency_value = 'Y'
+            st.session_state.offer_10_financing_contingency_days = st.session_state.offer_10_financing_contingency_days
+            st.session_state.offer_10_financing_contingency_days_string = st.session_state.offer_10_financing_contingency_days
+        else:
+            st.session_state.offer_10_financing_contingency_value = ''
+            st.session_state.offer_10_financing_contingency_days = 0
+            st.session_state.offer_10_financing_contingency_days_string = days_int_to_string(st.session_state.offer_10_financing_contingency_days)
+
+        if st.session_state.offer_10_appraisal_contingency_check:
+            st.session_state.offer_10_appraisal_contingency_value = 'Y'
+            st.session_state.offer_10_appraisal_contingency_days = st.session_state.offer_10_appraisal_contingency_days
+            st.session_state.offer_10_appraisal_contingency_days_string = st.session_state.offer_10_appraisal_contingency_days
+        else:
+            st.session_state.offer_10_appraisal_contingency_value = ''
+            st.session_state.offer_10_appraisal_contingency_days = 0
+            st.session_state.offer_10_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_10_appraisal_contingency_days)
+
+        if st.session_state.offer_10_home_sale_contingency_check:
+            st.session_state.offer_10_home_sale_contingency_value = 'Y'
+            st.session_state.offer_10_home_sale_contingency_days = st.session_state.offer_10_home_inspection_days
+            st.session_state.offer_10_home_sale_contingency_days_string = st.session_state.offer_10_home_sale_contingency_days
+        else:
+            st.session_state.offer_10_home_sale_contingency_value = ''
+            st.session_state.offer_10_home_sale_contingency_days = 0
+            st.session_state.offer_10_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_10_home_sale_contingency_days)
+
+        if st.session_state.offer_10_pre_occupancy_request:
+            st.session_state.offer_10_pre_occupancy_date = st.session_state.offer_10_update_pre_occupancy_date
+        else:
+            st.session_state.offer_10_pre_occupancy_date = ''
+
+        if st.session_state.offer_10_post_occupancy_request:
+            st.session_state.offer_10_post_occupancy_date = st.session_state.offer_10_update_post_occupancy_date
+        else:
+            st.session_state.offer_10_post_occupancy_date = ''
+            
+    def update_offer_11_info_form():
+        st.session_state.offer_11_name = st.session_state.update_offer_11_name
+        st.session_state.offer_11_settlement_date = st.session_state.update_offer_11_settlement_date
+        st.session_state.offer_11_settlement_company = st.session_state.update_offer_11_settlement_company
+        st.session_state.offer_11_amt = st.session_state.update_offer_11_amt
+        st.session_state.offer_11_emd_amt = st.session_state.update_offer_11_emd_amt
+        st.session_state.offer_11_down_pmt_pct = st.session_state.update_offer_11_down_pmt_pct
+        st.session_state.offer_11_down_pmt_pct = st.session_state.offer_11_down_pmt_pct / 100
+        st.session_state.offer_11_closing_subsidy_pct = st.session_state.offer_11_update_closing_subsidy_pct / 100
+        if st.session_state.offer_11_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_11_closing_subsidy_amt = st.session_state.offer_11_closing_subsidy_pct * st.session_state.offer_11_amt
+        else:
+            st.session_state.offer_11_closing_subsidy_amt = st.session_state.offer_11_closing_subsidy_flat_amt
+
+        if st.session_state.offer_11_home_inspection_check:
+            st.session_state.offer_11_home_inspection_value = 'Y'
+            st.session_state.offer_11_home_inspection_days = st.session_state.offer_11_home_inspection_days
+            st.session_state.offer_11_home_inspection_days_string = st.session_state.offer_11_home_inspection_days
+        else:
+            st.session_state.offer_11_home_inspection_value = ''
+            st.session_state.offer_11_home_inspection_days = 0
+            st.session_state.offer_11_home_inspection_days_string = days_int_to_string(st.session_state.offer_11_home_inspection_days)
+
+        if st.session_state.offer_11_radon_inspection_check:
+            st.session_state.offer_11_radon_inspection_value = 'Y'
+            st.session_state.offer_11_radon_inspection_days = st.session_state.offer_11_radon_inspection_days
+            st.session_state.offer_11_radon_inspection_days_string = st.session_state.offer_11_radon_inspection_days
+        else:
+            st.session_state.offer_11_radon_inspection_value = ''
+            st.session_state.offer_11_radon_inspection_days = 0
+            st.session_state.offer_11_radon_inspection_days_string = days_int_to_string(st.session_state.offer_11_radon_inspection_days)
+
+        if st.session_state.offer_11_septic_inspection_check:
+            st.session_state.offer_11_septic_inspection_value = 'Y'
+            st.session_state.offer_11_septic_inspection_days = st.session_state.offer_11_septic_inspection_days
+            st.session_state.offer_11_septic_inspection_days_string = st.session_state.offer_11_septic_inspection_days
+        else:
+            st.session_state.offer_11_septic_inspection_value = ''
+            st.session_state.offer_11_septic_inspection_days = 0
+            st.session_state.offer_11_septic_inspection_days_string = days_int_to_string(st.session_state.offer_11_septic_inspection_days)
+
+        if st.session_state.offer_11_well_inspection_check:
+            st.session_state.offer_11_well_inspection_value = 'Y'
+            st.session_state.offer_11_well_inspection_days = st.session_state.offer_11_well_inspection_days
+            st.session_state.offer_11_well_inspection_days_string = st.session_state.offer_11_well_inspection_days
+        else:
+            st.session_state.offer_11_well_inspection_value = ''
+            st.session_state.offer_11_well_inspection_days = 0
+            st.session_state.offer_11_well_inspection_days_string = days_int_to_string(st.session_state.offer_11_well_inspection_days)
+
+        if st.session_state.offer_11_financing_contingency_check:
+            st.session_state.offer_11_financing_contingency_value = 'Y'
+            st.session_state.offer_11_financing_contingency_days = st.session_state.offer_11_financing_contingency_days
+            st.session_state.offer_11_financing_contingency_days_string = st.session_state.offer_11_financing_contingency_days
+        else:
+            st.session_state.offer_11_financing_contingency_value = ''
+            st.session_state.offer_11_financing_contingency_days = 0
+            st.session_state.offer_11_financing_contingency_days_string = days_int_to_string(st.session_state.offer_11_financing_contingency_days)
+
+        if st.session_state.offer_11_appraisal_contingency_check:
+            st.session_state.offer_11_appraisal_contingency_value = 'Y'
+            st.session_state.offer_11_appraisal_contingency_days = st.session_state.offer_11_appraisal_contingency_days
+            st.session_state.offer_11_appraisal_contingency_days_string = st.session_state.offer_11_appraisal_contingency_days
+        else:
+            st.session_state.offer_11_appraisal_contingency_value = ''
+            st.session_state.offer_11_appraisal_contingency_days = 0
+            st.session_state.offer_11_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_11_appraisal_contingency_days)
+
+        if st.session_state.offer_11_home_sale_contingency_check:
+            st.session_state.offer_11_home_sale_contingency_value = 'Y'
+            st.session_state.offer_11_home_sale_contingency_days = st.session_state.offer_11_home_inspection_days
+            st.session_state.offer_11_home_sale_contingency_days_string = st.session_state.offer_11_home_sale_contingency_days
+        else:
+            st.session_state.offer_11_home_sale_contingency_value = ''
+            st.session_state.offer_11_home_sale_contingency_days = 0
+            st.session_state.offer_11_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_11_home_sale_contingency_days)
+
+        if st.session_state.offer_11_pre_occupancy_request:
+            st.session_state.offer_11_pre_occupancy_date = st.session_state.offer_11_update_pre_occupancy_date
+        else:
+            st.session_state.offer_11_pre_occupancy_date = ''
+
+        if st.session_state.offer_11_post_occupancy_request:
+            st.session_state.offer_11_post_occupancy_date = st.session_state.offer_11_update_post_occupancy_date
+        else:
+            st.session_state.offer_11_post_occupancy_date = ''
+            
+    def update_offer_12_info_form():
+        st.session_state.offer_12_name = st.session_state.update_offer_12_name
+        st.session_state.offer_12_settlement_date = st.session_state.update_offer_12_settlement_date
+        st.session_state.offer_12_settlement_company = st.session_state.update_offer_12_settlement_company
+        st.session_state.offer_12_amt = st.session_state.update_offer_12_amt
+        st.session_state.offer_12_emd_amt = st.session_state.update_offer_12_emd_amt
+        st.session_state.offer_12_down_pmt_pct = st.session_state.update_offer_12_down_pmt_pct
+        st.session_state.offer_12_down_pmt_pct = st.session_state.offer_12_down_pmt_pct / 100
+        st.session_state.offer_12_closing_subsidy_pct = st.session_state.offer_12_update_closing_subsidy_pct / 100
+        if st.session_state.offer_12_closing_subsidy_radio == 'Percent of Offer Amt (%)':
+            st.session_state.offer_12_closing_subsidy_amt = st.session_state.offer_12_closing_subsidy_pct * st.session_state.offer_12_amt
+        else:
+            st.session_state.offer_12_closing_subsidy_amt = st.session_state.offer_12_closing_subsidy_flat_amt
+
+        if st.session_state.offer_12_home_inspection_check:
+            st.session_state.offer_12_home_inspection_value = 'Y'
+            st.session_state.offer_12_home_inspection_days = st.session_state.offer_12_home_inspection_days
+            st.session_state.offer_12_home_inspection_days_string = st.session_state.offer_12_home_inspection_days
+        else:
+            st.session_state.offer_12_home_inspection_value = ''
+            st.session_state.offer_12_home_inspection_days = 0
+            st.session_state.offer_12_home_inspection_days_string = days_int_to_string(st.session_state.offer_12_home_inspection_days)
+
+        if st.session_state.offer_12_radon_inspection_check:
+            st.session_state.offer_12_radon_inspection_value = 'Y'
+            st.session_state.offer_12_radon_inspection_days = st.session_state.offer_12_radon_inspection_days
+            st.session_state.offer_12_radon_inspection_days_string = st.session_state.offer_12_radon_inspection_days
+        else:
+            st.session_state.offer_12_radon_inspection_value = ''
+            st.session_state.offer_12_radon_inspection_days = 0
+            st.session_state.offer_12_radon_inspection_days_string = days_int_to_string(st.session_state.offer_12_radon_inspection_days)
+
+        if st.session_state.offer_12_septic_inspection_check:
+            st.session_state.offer_12_septic_inspection_value = 'Y'
+            st.session_state.offer_12_septic_inspection_days = st.session_state.offer_12_septic_inspection_days
+            st.session_state.offer_12_septic_inspection_days_string = st.session_state.offer_12_septic_inspection_days
+        else:
+            st.session_state.offer_12_septic_inspection_value = ''
+            st.session_state.offer_12_septic_inspection_days = 0
+            st.session_state.offer_12_septic_inspection_days_string = days_int_to_string(st.session_state.offer_12_septic_inspection_days)
+
+        if st.session_state.offer_12_well_inspection_check:
+            st.session_state.offer_12_well_inspection_value = 'Y'
+            st.session_state.offer_12_well_inspection_days = st.session_state.offer_12_well_inspection_days
+            st.session_state.offer_12_well_inspection_days_string = st.session_state.offer_12_well_inspection_days
+        else:
+            st.session_state.offer_12_well_inspection_value = ''
+            st.session_state.offer_12_well_inspection_days = 0
+            st.session_state.offer_12_well_inspection_days_string = days_int_to_string(st.session_state.offer_12_well_inspection_days)
+
+        if st.session_state.offer_12_financing_contingency_check:
+            st.session_state.offer_12_financing_contingency_value = 'Y'
+            st.session_state.offer_12_financing_contingency_days = st.session_state.offer_12_financing_contingency_days
+            st.session_state.offer_12_financing_contingency_days_string = st.session_state.offer_12_financing_contingency_days
+        else:
+            st.session_state.offer_12_financing_contingency_value = ''
+            st.session_state.offer_12_financing_contingency_days = 0
+            st.session_state.offer_12_financing_contingency_days_string = days_int_to_string(st.session_state.offer_12_financing_contingency_days)
+
+        if st.session_state.offer_12_appraisal_contingency_check:
+            st.session_state.offer_12_appraisal_contingency_value = 'Y'
+            st.session_state.offer_12_appraisal_contingency_days = st.session_state.offer_12_appraisal_contingency_days
+            st.session_state.offer_12_appraisal_contingency_days_string = st.session_state.offer_12_appraisal_contingency_days
+        else:
+            st.session_state.offer_12_appraisal_contingency_value = ''
+            st.session_state.offer_12_appraisal_contingency_days = 0
+            st.session_state.offer_12_appraisal_contingency_days_string = days_int_to_string(st.session_state.offer_12_appraisal_contingency_days)
+
+        if st.session_state.offer_12_home_sale_contingency_check:
+            st.session_state.offer_12_home_sale_contingency_value = 'Y'
+            st.session_state.offer_12_home_sale_contingency_days = st.session_state.offer_12_home_inspection_days
+            st.session_state.offer_12_home_sale_contingency_days_string = st.session_state.offer_12_home_sale_contingency_days
+        else:
+            st.session_state.offer_12_home_sale_contingency_value = ''
+            st.session_state.offer_12_home_sale_contingency_days = 0
+            st.session_state.offer_12_home_sale_contingency_days_string = days_int_to_string(
+                st.session_state.offer_12_home_sale_contingency_days)
+
+        if st.session_state.offer_12_pre_occupancy_request:
+            st.session_state.offer_12_pre_occupancy_date = st.session_state.offer_12_update_pre_occupancy_date
+        else:
+            st.session_state.offer_12_pre_occupancy_date = ''
+
+        if st.session_state.offer_12_post_occupancy_request:
+            st.session_state.offer_12_post_occupancy_date = st.session_state.offer_12_update_post_occupancy_date
+        else:
+            st.session_state.offer_12_post_occupancy_date = ''
+
 
     with intro_info_container:
         with st.expander('Introduction Data Form'):
@@ -860,7 +1976,6 @@ def main():
                 with offer_1_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_1_update_post_occupancy_date')
                 offer_1_submit = st.form_submit_button('Submit Offer 1\'s Information', on_click=update_offer_1_info_form)
-
 
     with offer_2_container:
         with st.expander('Offer 2 Form'):
@@ -1029,6 +2144,446 @@ def main():
                     st.date_input('Post Occupancy Date', key='offer_4_update_post_occupancy_date')
                 offer_4_submit = st.form_submit_button('Submit Offer 4\'s Information', on_click=update_offer_4_info_form)
 
+    with offer_5_container:
+        with st.expander('Offer 5 Form'):
+            with st.form(key='offer_5_info_form'):
+                st.markdown('##### **Enter Offer 5\'s Information**')
+                offer_5_col1, offer_5_col2 = st.columns(2)
+                with offer_5_col1:
+                    st.text_input('Name of Offer', key='update_offer_5_name')
+                    st.date_input('Settlement Date', key='update_offer_5_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_5_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_5_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_5_emd_amt')
+                with offer_5_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_5_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_5_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_5_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_5_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_5_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_5_contingencies_waved')
+                offer_5_cont_col1, offer_5_cont_col2 = st.columns(2)
+                with offer_5_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_5_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_5_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_5_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_5_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_5_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_5_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_5_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_5_well_inspection_days')
+                with offer_5_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_5_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_5_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_5_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_5_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_5_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_5_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_5_pre_occupancy_col1, offer_5_pre_occupancy_col2 = st.columns(2)
+                with offer_5_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_5_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_5_pre_occupancy_credit_to_seller_amt')
+                with offer_5_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_5_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_5_post_occupancy_col1, offer_5_post_occupancy_col2 = st.columns(2)
+                with offer_5_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_5_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_5_post_occupancy_cost_to_seller_amt')
+                with offer_5_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_5_update_post_occupancy_date')
+                offer_5_submit = st.form_submit_button('Submit Offer 5\'s Information', on_click=update_offer_5_info_form)
+
+    with offer_6_container:
+        with st.expander('Offer 6 Form'):
+            with st.form(key='offer_6_info_form'):
+                st.markdown('##### **Enter Offer 6\'s Information**')
+                offer_6_col1, offer_6_col2 = st.columns(2)
+                with offer_6_col1:
+                    st.text_input('Name of Offer', key='update_offer_6_name')
+                    st.date_input('Settlement Date', key='update_offer_6_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_6_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_6_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_6_emd_amt')
+                with offer_6_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_6_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_6_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_6_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_6_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_6_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_6_contingencies_waved')
+                offer_6_cont_col1, offer_6_cont_col2 = st.columns(2)
+                with offer_6_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_6_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_6_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_6_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_6_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_6_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_6_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_6_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_6_well_inspection_days')
+                with offer_6_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_6_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_6_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_6_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_6_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_6_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_6_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_6_pre_occupancy_col1, offer_6_pre_occupancy_col2 = st.columns(2)
+                with offer_6_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_6_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_6_pre_occupancy_credit_to_seller_amt')
+                with offer_6_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_6_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_6_post_occupancy_col1, offer_6_post_occupancy_col2 = st.columns(2)
+                with offer_6_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_6_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_6_post_occupancy_cost_to_seller_amt')
+                with offer_6_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_6_update_post_occupancy_date')
+                offer_6_submit = st.form_submit_button('Submit Offer 6\'s Information', on_click=update_offer_6_info_form)
+
+    with offer_7_container:
+        with st.expander('Offer 7 Form'):
+            with st.form(key='offer_7_info_form'):
+                st.markdown('##### **Enter Offer 7\'s Information**')
+                offer_7_col1, offer_7_col2 = st.columns(2)
+                with offer_7_col1:
+                    st.text_input('Name of Offer', key='update_offer_7_name')
+                    st.date_input('Settlement Date', key='update_offer_7_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_7_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_7_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_7_emd_amt')
+                with offer_7_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_7_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_7_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_7_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_7_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_7_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_7_contingencies_waved')
+                offer_7_cont_col1, offer_7_cont_col2 = st.columns(2)
+                with offer_7_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_7_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_7_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_7_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_7_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_7_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_7_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_7_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_7_well_inspection_days')
+                with offer_7_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_7_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_7_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_7_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_7_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_7_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_7_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_7_pre_occupancy_col1, offer_7_pre_occupancy_col2 = st.columns(2)
+                with offer_7_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_7_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_7_pre_occupancy_credit_to_seller_amt')
+                with offer_7_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_7_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_7_post_occupancy_col1, offer_7_post_occupancy_col2 = st.columns(2)
+                with offer_7_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_7_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_7_post_occupancy_cost_to_seller_amt')
+                with offer_7_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_7_update_post_occupancy_date')
+                offer_7_submit = st.form_submit_button('Submit Offer 7\'s Information', on_click=update_offer_7_info_form)
+
+    with offer_8_container:
+        with st.expander('Offer 8 Form'):
+            with st.form(key='offer_8_info_form'):
+                st.markdown('##### **Enter Offer 8\'s Information**')
+                offer_8_col1, offer_8_col2 = st.columns(2)
+                with offer_8_col1:
+                    st.text_input('Name of Offer', key='update_offer_8_name')
+                    st.date_input('Settlement Date', key='update_offer_8_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_8_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_8_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_8_emd_amt')
+                with offer_8_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_8_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_8_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_8_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_8_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_8_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_8_contingencies_waved')
+                offer_8_cont_col1, offer_8_cont_col2 = st.columns(2)
+                with offer_8_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_8_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_8_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_8_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_8_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_8_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_8_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_8_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_8_well_inspection_days')
+                with offer_8_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_8_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_8_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_8_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_8_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_8_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_8_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_8_pre_occupancy_col1, offer_8_pre_occupancy_col2 = st.columns(2)
+                with offer_8_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_8_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_8_pre_occupancy_credit_to_seller_amt')
+                with offer_8_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_8_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_8_post_occupancy_col1, offer_8_post_occupancy_col2 = st.columns(2)
+                with offer_8_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_8_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_8_post_occupancy_cost_to_seller_amt')
+                with offer_8_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_8_update_post_occupancy_date')
+                offer_8_submit = st.form_submit_button('Submit Offer 8\'s Information', on_click=update_offer_8_info_form)
+
+    with offer_9_container:
+        with st.expander('Offer 9 Form'):
+            with st.form(key='offer_9_info_form'):
+                st.markdown('##### **Enter Offer 9\'s Information**')
+                offer_9_col1, offer_9_col2 = st.columns(2)
+                with offer_9_col1:
+                    st.text_input('Name of Offer', key='update_offer_9_name')
+                    st.date_input('Settlement Date', key='update_offer_9_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_9_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_9_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_9_emd_amt')
+                with offer_9_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_9_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_9_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_9_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_9_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_9_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_9_contingencies_waved')
+                offer_9_cont_col1, offer_9_cont_col2 = st.columns(2)
+                with offer_9_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_9_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_9_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_9_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_9_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_9_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_9_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_9_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_9_well_inspection_days')
+                with offer_9_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_9_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_9_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_9_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_9_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_9_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_9_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_9_pre_occupancy_col1, offer_9_pre_occupancy_col2 = st.columns(2)
+                with offer_9_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_9_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_9_pre_occupancy_credit_to_seller_amt')
+                with offer_9_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_9_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_9_post_occupancy_col1, offer_9_post_occupancy_col2 = st.columns(2)
+                with offer_9_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_9_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_9_post_occupancy_cost_to_seller_amt')
+                with offer_9_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_9_update_post_occupancy_date')
+                offer_9_submit = st.form_submit_button('Submit Offer 9\'s Information', on_click=update_offer_9_info_form)
+
+    with offer_10_container:
+        with st.expander('Offer 10 Form'):
+            with st.form(key='offer_10_info_form'):
+                st.markdown('##### **Enter Offer 10\'s Information**')
+                offer_10_col1, offer_10_col2 = st.columns(2)
+                with offer_10_col1:
+                    st.text_input('Name of Offer', key='update_offer_10_name')
+                    st.date_input('Settlement Date', key='update_offer_10_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_10_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_10_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_10_emd_amt')
+                with offer_10_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_10_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_10_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_10_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_10_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_10_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_10_contingencies_waved')
+                offer_10_cont_col1, offer_10_cont_col2 = st.columns(2)
+                with offer_10_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_10_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_10_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_10_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_10_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_10_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_10_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_10_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_10_well_inspection_days')
+                with offer_10_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_10_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_10_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_10_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_10_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_10_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_10_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_10_pre_occupancy_col1, offer_10_pre_occupancy_col2 = st.columns(2)
+                with offer_10_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_10_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_10_pre_occupancy_credit_to_seller_amt')
+                with offer_10_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_10_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_10_post_occupancy_col1, offer_10_post_occupancy_col2 = st.columns(2)
+                with offer_10_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_10_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_10_post_occupancy_cost_to_seller_amt')
+                with offer_10_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_10_update_post_occupancy_date')
+                offer_10_submit = st.form_submit_button('Submit Offer 10\'s Information', on_click=update_offer_10_info_form)
+
+    with offer_11_container:
+        with st.expander('Offer 11 Form'):
+            with st.form(key='offer_11_info_form'):
+                st.markdown('##### **Enter Offer 11\'s Information**')
+                offer_11_col1, offer_11_col2 = st.columns(2)
+                with offer_11_col1:
+                    st.text_input('Name of Offer', key='update_offer_11_name')
+                    st.date_input('Settlement Date', key='update_offer_11_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_11_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_11_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_11_emd_amt')
+                with offer_11_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_11_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_11_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_11_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_11_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_11_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_11_contingencies_waved')
+                offer_11_cont_col1, offer_11_cont_col2 = st.columns(2)
+                with offer_11_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_11_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_11_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_11_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_11_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_11_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_11_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_11_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_11_well_inspection_days')
+                with offer_11_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_11_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_11_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_11_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_11_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_11_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_11_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_11_pre_occupancy_col1, offer_11_pre_occupancy_col2 = st.columns(2)
+                with offer_11_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_11_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_11_pre_occupancy_credit_to_seller_amt')
+                with offer_11_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_11_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_11_post_occupancy_col1, offer_11_post_occupancy_col2 = st.columns(2)
+                with offer_11_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_11_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_11_post_occupancy_cost_to_seller_amt')
+                with offer_11_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_11_update_post_occupancy_date')
+                offer_11_submit = st.form_submit_button('Submit Offer 11\'s Information', on_click=update_offer_11_info_form)
+
+    with offer_12_container:
+        with st.expander('Offer 12 Form'):
+            with st.form(key='offer_12_info_form'):
+                st.markdown('##### **Enter Offer 12\'s Information**')
+                offer_12_col1, offer_12_col2 = st.columns(2)
+                with offer_12_col1:
+                    st.text_input('Name of Offer', key='update_offer_12_name')
+                    st.date_input('Settlement Date', key='update_offer_12_settlement_date')
+                    st.text_input('Settlement Company', key='update_offer_12_settlement_company')
+                    st.slider('Offer Amount ($)', 0, 1500000, step=1000, key='update_offer_12_amt')
+                    st.slider('EMD Amount ($)', 0, 50000, step=100, key='update_offer_12_emd_amt')
+                with offer_12_col2:
+                    st.selectbox('Financing Type', financing_types, key='offer_12_finance_type')
+                    st.slider('Down Payment Pct (%)', 0.0, 100.0, step=0.01, key='update_offer_12_down_pmt_pct')
+                    st.radio('Closing Cost Subsidy Radio', ['Percent of Offer Amt (%)', 'Flat $ Amount'], key='offer_12_closing_subsidy_radio')
+                    st.slider('Closing Cost Subsidy of (%):', 0.0, 100.0, step=0.01, key='offer_12_update_closing_subsidy_pct')
+                    st.slider('Closing Cost Subsidy of ($):', 0, 100000, step=50, key='offer_12_closing_subsidy_flat_amt')
+                st.write('---')
+                st.write('Contingencies and Clauses of the Offer')
+                # st.text_input('Contingencies Waived', key='offer_12_contingencies_waved')
+                offer_12_cont_col1, offer_12_cont_col2 = st.columns(2)
+                with offer_12_cont_col1:
+                    st.checkbox('Home Inspection', key='offer_12_home_inspection_check')
+                    st.slider('Home Inspection Days', 0, 45, step=1, key='offer_12_home_inspection_days')
+                    st.checkbox('Radon Inspection', key='offer_12_radon_inspection_check')
+                    st.slider('Radon Inspection Days', 0, 45, step=1, key='offer_12_radon_inspection_days')
+                    st.checkbox('Septic Inspection', key='offer_12_septic_inspection_check')
+                    st.slider('Septic Inspection Days', 0, 45, step=1, key='offer_12_septic_inspection_days')
+                    st.checkbox('Well Inspection', key='offer_12_well_inspection_check')
+                    st.slider('Well Inspection Days', 0, 45, step=1, key='offer_12_well_inspection_days')
+                with offer_12_cont_col2:
+                    st.checkbox('Financing Contingency', key='offer_12_financing_contingency_check')
+                    st.slider('Financing Contingency Days', 0, 45, step=1, key='offer_12_financing_contingency_days')
+                    st.checkbox('Appraisal Contingency', key='offer_12_appraisal_contingency_check')
+                    st.slider('Appraisal Contingency Days', 0, 45, step=1, key='offer_12_appraisal_contingency_days')
+                    st.checkbox('Home Sale Contingency', key='offer_12_home_sale_contingency_check')
+                    st.slider('Home Sale Contingency Days', 0, 45, step=1, key='offer_12_home_sale_contingency_days')
+                st.write('---')
+                st.write('Pre Occupancy')
+                offer_12_pre_occupancy_col1, offer_12_pre_occupancy_col2 = st.columns(2)
+                with offer_12_pre_occupancy_col1:
+                    st.checkbox('Pre Occupancy Request', key='offer_12_pre_occupancy_request')
+                    st.slider('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_12_pre_occupancy_credit_to_seller_amt')
+                with offer_12_pre_occupancy_col2:
+                    st.date_input('Pre Occupancy Date', key='offer_12_update_pre_occupancy_date')
+                st.write('---')
+                st.write('Post Occupancy')
+                offer_12_post_occupancy_col1, offer_12_post_occupancy_col2 = st.columns(2)
+                with offer_12_post_occupancy_col1:
+                    st.checkbox('Post Occupancy Request', key='offer_12_post_occupancy_request')
+                    st.slider('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_12_post_occupancy_cost_to_seller_amt')
+                with offer_12_post_occupancy_col2:
+                    st.date_input('Post Occupancy Date', key='offer_12_update_post_occupancy_date')
+                offer_12_submit = st.form_submit_button('Submit Offer 12\'s Information', on_click=update_offer_12_info_form)
+
     # st.write(st.session_state)
 
     offer_comparison_form = comparison_inputs_to_excel(
@@ -1161,6 +2716,214 @@ def main():
         offer_4_closing_cost_subsidy_amt=st.session_state.offer_4_closing_subsidy_amt,
         offer_4_pre_occupancy_credit_amt=st.session_state.offer_4_pre_occupancy_credit_to_seller_amt,
         offer_4_post_occupancy_cost_amt=st.session_state.offer_4_post_occupancy_cost_to_seller_amt,
+        offer_5_name=st.session_state.offer_5_name,
+        offer_5_amt=st.session_state.offer_5_amt,
+        offer_5_down_pmt_pct=st.session_state.offer_5_down_pmt_pct,
+        offer_5_settlement_date=st.session_state.offer_5_settlement_date,
+        offer_5_settlement_company=st.session_state.offer_5_settlement_company,
+        offer_5_emd_amt=st.session_state.offer_5_emd_amt,
+        offer_5_financing_type=st.session_state.offer_5_finance_type,
+        offer_5_home_inspection_check=st.session_state.offer_5_home_inspection_value,
+        offer_5_home_inspection_days=st.session_state.offer_5_home_inspection_days_string,
+        offer_5_radon_inspection_check=st.session_state.offer_5_radon_inspection_value,
+        offer_5_radon_inspection_days=st.session_state.offer_5_radon_inspection_days_string,
+        offer_5_septic_inspection_check=st.session_state.offer_5_septic_inspection_value,
+        offer_5_septic_inspection_days=st.session_state.offer_5_septic_inspection_days_string,
+        offer_5_well_inspection_check=st.session_state.offer_5_well_inspection_value,
+        offer_5_well_inspection_days=st.session_state.offer_5_well_inspection_days_string,
+        offer_5_finance_contingency_check=st.session_state.offer_5_financing_contingency_value,
+        offer_5_finance_contingency_days=st.session_state.offer_5_financing_contingency_days_string,
+        offer_5_appraisal_contingency_check=st.session_state.offer_5_appraisal_contingency_value,
+        offer_5_appraisal_contingency_days=st.session_state.offer_5_appraisal_contingency_days_string,
+        offer_5_home_sale_contingency_check=st.session_state.offer_5_home_sale_contingency_value,
+        offer_5_home_sale_contingency_days=st.session_state.offer_5_home_sale_contingency_days_string,
+        offer_5_pre_occupancy_date=st.session_state.offer_5_pre_occupancy_date,
+        offer_5_post_occupancy_date=st.session_state.offer_5_post_occupancy_date,
+        offer_5_closing_cost_subsidy_amt=st.session_state.offer_5_closing_subsidy_amt,
+        offer_5_pre_occupancy_credit_amt=st.session_state.offer_5_pre_occupancy_credit_to_seller_amt,
+        offer_5_post_occupancy_cost_amt=st.session_state.offer_5_post_occupancy_cost_to_seller_amt,
+        offer_6_name=st.session_state.offer_6_name,
+        offer_6_amt=st.session_state.offer_6_amt,
+        offer_6_down_pmt_pct=st.session_state.offer_6_down_pmt_pct,
+        offer_6_settlement_date=st.session_state.offer_6_settlement_date,
+        offer_6_settlement_company=st.session_state.offer_6_settlement_company,
+        offer_6_emd_amt=st.session_state.offer_6_emd_amt,
+        offer_6_financing_type=st.session_state.offer_6_finance_type,
+        offer_6_home_inspection_check=st.session_state.offer_6_home_inspection_value,
+        offer_6_home_inspection_days=st.session_state.offer_6_home_inspection_days_string,
+        offer_6_radon_inspection_check=st.session_state.offer_6_radon_inspection_value,
+        offer_6_radon_inspection_days=st.session_state.offer_6_radon_inspection_days_string,
+        offer_6_septic_inspection_check=st.session_state.offer_6_septic_inspection_value,
+        offer_6_septic_inspection_days=st.session_state.offer_6_septic_inspection_days_string,
+        offer_6_well_inspection_check=st.session_state.offer_6_well_inspection_value,
+        offer_6_well_inspection_days=st.session_state.offer_6_well_inspection_days_string,
+        offer_6_finance_contingency_check=st.session_state.offer_6_financing_contingency_value,
+        offer_6_finance_contingency_days=st.session_state.offer_6_financing_contingency_days_string,
+        offer_6_appraisal_contingency_check=st.session_state.offer_6_appraisal_contingency_value,
+        offer_6_appraisal_contingency_days=st.session_state.offer_6_appraisal_contingency_days_string,
+        offer_6_home_sale_contingency_check=st.session_state.offer_6_home_sale_contingency_value,
+        offer_6_home_sale_contingency_days=st.session_state.offer_6_home_sale_contingency_days_string,
+        offer_6_pre_occupancy_date=st.session_state.offer_6_pre_occupancy_date,
+        offer_6_post_occupancy_date=st.session_state.offer_6_post_occupancy_date,
+        offer_6_closing_cost_subsidy_amt=st.session_state.offer_6_closing_subsidy_amt,
+        offer_6_pre_occupancy_credit_amt=st.session_state.offer_6_pre_occupancy_credit_to_seller_amt,
+        offer_6_post_occupancy_cost_amt=st.session_state.offer_6_post_occupancy_cost_to_seller_amt,
+        offer_7_name=st.session_state.offer_7_name,
+        offer_7_amt=st.session_state.offer_7_amt,
+        offer_7_down_pmt_pct=st.session_state.offer_7_down_pmt_pct,
+        offer_7_settlement_date=st.session_state.offer_7_settlement_date,
+        offer_7_settlement_company=st.session_state.offer_7_settlement_company,
+        offer_7_emd_amt=st.session_state.offer_7_emd_amt,
+        offer_7_financing_type=st.session_state.offer_7_finance_type,
+        offer_7_home_inspection_check=st.session_state.offer_7_home_inspection_value,
+        offer_7_home_inspection_days=st.session_state.offer_7_home_inspection_days_string,
+        offer_7_radon_inspection_check=st.session_state.offer_7_radon_inspection_value,
+        offer_7_radon_inspection_days=st.session_state.offer_7_radon_inspection_days_string,
+        offer_7_septic_inspection_check=st.session_state.offer_7_septic_inspection_value,
+        offer_7_septic_inspection_days=st.session_state.offer_7_septic_inspection_days_string,
+        offer_7_well_inspection_check=st.session_state.offer_7_well_inspection_value,
+        offer_7_well_inspection_days=st.session_state.offer_7_well_inspection_days_string,
+        offer_7_finance_contingency_check=st.session_state.offer_7_financing_contingency_value,
+        offer_7_finance_contingency_days=st.session_state.offer_7_financing_contingency_days_string,
+        offer_7_appraisal_contingency_check=st.session_state.offer_7_appraisal_contingency_value,
+        offer_7_appraisal_contingency_days=st.session_state.offer_7_appraisal_contingency_days_string,
+        offer_7_home_sale_contingency_check=st.session_state.offer_7_home_sale_contingency_value,
+        offer_7_home_sale_contingency_days=st.session_state.offer_7_home_sale_contingency_days_string,
+        offer_7_pre_occupancy_date=st.session_state.offer_7_pre_occupancy_date,
+        offer_7_post_occupancy_date=st.session_state.offer_7_post_occupancy_date,
+        offer_7_closing_cost_subsidy_amt=st.session_state.offer_7_closing_subsidy_amt,
+        offer_7_pre_occupancy_credit_amt=st.session_state.offer_7_pre_occupancy_credit_to_seller_amt,
+        offer_7_post_occupancy_cost_amt=st.session_state.offer_7_post_occupancy_cost_to_seller_amt,
+        offer_8_name=st.session_state.offer_8_name,
+        offer_8_amt=st.session_state.offer_8_amt,
+        offer_8_down_pmt_pct=st.session_state.offer_8_down_pmt_pct,
+        offer_8_settlement_date=st.session_state.offer_8_settlement_date,
+        offer_8_settlement_company=st.session_state.offer_8_settlement_company,
+        offer_8_emd_amt=st.session_state.offer_8_emd_amt,
+        offer_8_financing_type=st.session_state.offer_8_finance_type,
+        offer_8_home_inspection_check=st.session_state.offer_8_home_inspection_value,
+        offer_8_home_inspection_days=st.session_state.offer_8_home_inspection_days_string,
+        offer_8_radon_inspection_check=st.session_state.offer_8_radon_inspection_value,
+        offer_8_radon_inspection_days=st.session_state.offer_8_radon_inspection_days_string,
+        offer_8_septic_inspection_check=st.session_state.offer_8_septic_inspection_value,
+        offer_8_septic_inspection_days=st.session_state.offer_8_septic_inspection_days_string,
+        offer_8_well_inspection_check=st.session_state.offer_8_well_inspection_value,
+        offer_8_well_inspection_days=st.session_state.offer_8_well_inspection_days_string,
+        offer_8_finance_contingency_check=st.session_state.offer_8_financing_contingency_value,
+        offer_8_finance_contingency_days=st.session_state.offer_8_financing_contingency_days_string,
+        offer_8_appraisal_contingency_check=st.session_state.offer_8_appraisal_contingency_value,
+        offer_8_appraisal_contingency_days=st.session_state.offer_8_appraisal_contingency_days_string,
+        offer_8_home_sale_contingency_check=st.session_state.offer_8_home_sale_contingency_value,
+        offer_8_home_sale_contingency_days=st.session_state.offer_8_home_sale_contingency_days_string,
+        offer_8_pre_occupancy_date=st.session_state.offer_8_pre_occupancy_date,
+        offer_8_post_occupancy_date=st.session_state.offer_8_post_occupancy_date,
+        offer_8_closing_cost_subsidy_amt=st.session_state.offer_8_closing_subsidy_amt,
+        offer_8_pre_occupancy_credit_amt=st.session_state.offer_8_pre_occupancy_credit_to_seller_amt,
+        offer_8_post_occupancy_cost_amt=st.session_state.offer_8_post_occupancy_cost_to_seller_amt,
+        offer_9_name=st.session_state.offer_9_name,
+        offer_9_amt=st.session_state.offer_9_amt,
+        offer_9_down_pmt_pct=st.session_state.offer_9_down_pmt_pct,
+        offer_9_settlement_date=st.session_state.offer_9_settlement_date,
+        offer_9_settlement_company=st.session_state.offer_9_settlement_company,
+        offer_9_emd_amt=st.session_state.offer_9_emd_amt,
+        offer_9_financing_type=st.session_state.offer_9_finance_type,
+        offer_9_home_inspection_check=st.session_state.offer_9_home_inspection_value,
+        offer_9_home_inspection_days=st.session_state.offer_9_home_inspection_days_string,
+        offer_9_radon_inspection_check=st.session_state.offer_9_radon_inspection_value,
+        offer_9_radon_inspection_days=st.session_state.offer_9_radon_inspection_days_string,
+        offer_9_septic_inspection_check=st.session_state.offer_9_septic_inspection_value,
+        offer_9_septic_inspection_days=st.session_state.offer_9_septic_inspection_days_string,
+        offer_9_well_inspection_check=st.session_state.offer_9_well_inspection_value,
+        offer_9_well_inspection_days=st.session_state.offer_9_well_inspection_days_string,
+        offer_9_finance_contingency_check=st.session_state.offer_9_financing_contingency_value,
+        offer_9_finance_contingency_days=st.session_state.offer_9_financing_contingency_days_string,
+        offer_9_appraisal_contingency_check=st.session_state.offer_9_appraisal_contingency_value,
+        offer_9_appraisal_contingency_days=st.session_state.offer_9_appraisal_contingency_days_string,
+        offer_9_home_sale_contingency_check=st.session_state.offer_9_home_sale_contingency_value,
+        offer_9_home_sale_contingency_days=st.session_state.offer_9_home_sale_contingency_days_string,
+        offer_9_pre_occupancy_date=st.session_state.offer_9_pre_occupancy_date,
+        offer_9_post_occupancy_date=st.session_state.offer_9_post_occupancy_date,
+        offer_9_closing_cost_subsidy_amt=st.session_state.offer_9_closing_subsidy_amt,
+        offer_9_pre_occupancy_credit_amt=st.session_state.offer_9_pre_occupancy_credit_to_seller_amt,
+        offer_9_post_occupancy_cost_amt=st.session_state.offer_9_post_occupancy_cost_to_seller_amt,
+        offer_10_name=st.session_state.offer_10_name,
+        offer_10_amt=st.session_state.offer_10_amt,
+        offer_10_down_pmt_pct=st.session_state.offer_10_down_pmt_pct,
+        offer_10_settlement_date=st.session_state.offer_10_settlement_date,
+        offer_10_settlement_company=st.session_state.offer_10_settlement_company,
+        offer_10_emd_amt=st.session_state.offer_10_emd_amt,
+        offer_10_financing_type=st.session_state.offer_10_finance_type,
+        offer_10_home_inspection_check=st.session_state.offer_10_home_inspection_value,
+        offer_10_home_inspection_days=st.session_state.offer_10_home_inspection_days_string,
+        offer_10_radon_inspection_check=st.session_state.offer_10_radon_inspection_value,
+        offer_10_radon_inspection_days=st.session_state.offer_10_radon_inspection_days_string,
+        offer_10_septic_inspection_check=st.session_state.offer_10_septic_inspection_value,
+        offer_10_septic_inspection_days=st.session_state.offer_10_septic_inspection_days_string,
+        offer_10_well_inspection_check=st.session_state.offer_10_well_inspection_value,
+        offer_10_well_inspection_days=st.session_state.offer_10_well_inspection_days_string,
+        offer_10_finance_contingency_check=st.session_state.offer_10_financing_contingency_value,
+        offer_10_finance_contingency_days=st.session_state.offer_10_financing_contingency_days_string,
+        offer_10_appraisal_contingency_check=st.session_state.offer_10_appraisal_contingency_value,
+        offer_10_appraisal_contingency_days=st.session_state.offer_10_appraisal_contingency_days_string,
+        offer_10_home_sale_contingency_check=st.session_state.offer_10_home_sale_contingency_value,
+        offer_10_home_sale_contingency_days=st.session_state.offer_10_home_sale_contingency_days_string,
+        offer_10_pre_occupancy_date=st.session_state.offer_10_pre_occupancy_date,
+        offer_10_post_occupancy_date=st.session_state.offer_10_post_occupancy_date,
+        offer_10_closing_cost_subsidy_amt=st.session_state.offer_10_closing_subsidy_amt,
+        offer_10_pre_occupancy_credit_amt=st.session_state.offer_10_pre_occupancy_credit_to_seller_amt,
+        offer_10_post_occupancy_cost_amt=st.session_state.offer_10_post_occupancy_cost_to_seller_amt,
+        offer_11_name=st.session_state.offer_11_name,
+        offer_11_amt=st.session_state.offer_11_amt,
+        offer_11_down_pmt_pct=st.session_state.offer_11_down_pmt_pct,
+        offer_11_settlement_date=st.session_state.offer_11_settlement_date,
+        offer_11_settlement_company=st.session_state.offer_11_settlement_company,
+        offer_11_emd_amt=st.session_state.offer_11_emd_amt,
+        offer_11_financing_type=st.session_state.offer_11_finance_type,
+        offer_11_home_inspection_check=st.session_state.offer_11_home_inspection_value,
+        offer_11_home_inspection_days=st.session_state.offer_11_home_inspection_days_string,
+        offer_11_radon_inspection_check=st.session_state.offer_11_radon_inspection_value,
+        offer_11_radon_inspection_days=st.session_state.offer_11_radon_inspection_days_string,
+        offer_11_septic_inspection_check=st.session_state.offer_11_septic_inspection_value,
+        offer_11_septic_inspection_days=st.session_state.offer_11_septic_inspection_days_string,
+        offer_11_well_inspection_check=st.session_state.offer_11_well_inspection_value,
+        offer_11_well_inspection_days=st.session_state.offer_11_well_inspection_days_string,
+        offer_11_finance_contingency_check=st.session_state.offer_11_financing_contingency_value,
+        offer_11_finance_contingency_days=st.session_state.offer_11_financing_contingency_days_string,
+        offer_11_appraisal_contingency_check=st.session_state.offer_11_appraisal_contingency_value,
+        offer_11_appraisal_contingency_days=st.session_state.offer_11_appraisal_contingency_days_string,
+        offer_11_home_sale_contingency_check=st.session_state.offer_11_home_sale_contingency_value,
+        offer_11_home_sale_contingency_days=st.session_state.offer_11_home_sale_contingency_days_string,
+        offer_11_pre_occupancy_date=st.session_state.offer_11_pre_occupancy_date,
+        offer_11_post_occupancy_date=st.session_state.offer_11_post_occupancy_date,
+        offer_11_closing_cost_subsidy_amt=st.session_state.offer_11_closing_subsidy_amt,
+        offer_11_pre_occupancy_credit_amt=st.session_state.offer_11_pre_occupancy_credit_to_seller_amt,
+        offer_11_post_occupancy_cost_amt=st.session_state.offer_11_post_occupancy_cost_to_seller_amt,
+        offer_12_name=st.session_state.offer_12_name,
+        offer_12_amt=st.session_state.offer_12_amt,
+        offer_12_down_pmt_pct=st.session_state.offer_12_down_pmt_pct,
+        offer_12_settlement_date=st.session_state.offer_12_settlement_date,
+        offer_12_settlement_company=st.session_state.offer_12_settlement_company,
+        offer_12_emd_amt=st.session_state.offer_12_emd_amt,
+        offer_12_financing_type=st.session_state.offer_12_finance_type,
+        offer_12_home_inspection_check=st.session_state.offer_12_home_inspection_value,
+        offer_12_home_inspection_days=st.session_state.offer_12_home_inspection_days_string,
+        offer_12_radon_inspection_check=st.session_state.offer_12_radon_inspection_value,
+        offer_12_radon_inspection_days=st.session_state.offer_12_radon_inspection_days_string,
+        offer_12_septic_inspection_check=st.session_state.offer_12_septic_inspection_value,
+        offer_12_septic_inspection_days=st.session_state.offer_12_septic_inspection_days_string,
+        offer_12_well_inspection_check=st.session_state.offer_12_well_inspection_value,
+        offer_12_well_inspection_days=st.session_state.offer_12_well_inspection_days_string,
+        offer_12_finance_contingency_check=st.session_state.offer_12_financing_contingency_value,
+        offer_12_finance_contingency_days=st.session_state.offer_12_financing_contingency_days_string,
+        offer_12_appraisal_contingency_check=st.session_state.offer_12_appraisal_contingency_value,
+        offer_12_appraisal_contingency_days=st.session_state.offer_12_appraisal_contingency_days_string,
+        offer_12_home_sale_contingency_check=st.session_state.offer_12_home_sale_contingency_value,
+        offer_12_home_sale_contingency_days=st.session_state.offer_12_home_sale_contingency_days_string,
+        offer_12_pre_occupancy_date=st.session_state.offer_12_pre_occupancy_date,
+        offer_12_post_occupancy_date=st.session_state.offer_12_post_occupancy_date,
+        offer_12_closing_cost_subsidy_amt=st.session_state.offer_12_closing_subsidy_amt,
+        offer_12_pre_occupancy_credit_amt=st.session_state.offer_12_pre_occupancy_credit_to_seller_amt,
+        offer_12_post_occupancy_cost_amt=st.session_state.offer_12_post_occupancy_cost_to_seller_amt,
     )
 
     st.download_button(
