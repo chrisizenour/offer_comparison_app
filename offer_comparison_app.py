@@ -69,7 +69,7 @@ def main():
             st.markdown(
                 '''
                 This application is built into multiple, separated data input forms\n
-                To ensure the form is populating correctly, open the Common Data Form to check to see that if the pre-set values are loaded\n
+                To ensure the form is populating correctly, open the Common Data Form to see if the pre-set values loaded\n
                 If the pre-set values are not initialized, refresh the webpage, re-enter the password, and again check the Common Data Form to see if the pre-set values loaded\n
                 Perform this process until the pre-set values load\n
                 When entering values into percentage fields, enter the value as the percentage you want
@@ -1966,17 +1966,19 @@ def main():
                 offer_1_pre_occupancy_col1, offer_1_pre_occupancy_col2 = st.columns(2)
                 with offer_1_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_1_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_1_pre_occupancy_credit_to_seller_amt')
                 with offer_1_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_1_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_1_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_1_post_occupancy_col1, offer_1_post_occupancy_col2 = st.columns(2)
                 with offer_1_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_1_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_1_post_occupancy_cost_to_seller_amt')
                 with offer_1_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_1_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_1_post_occupancy_cost_to_seller_amt')
                 offer_1_submit = st.form_submit_button('Submit Offer 1\'s Information', on_click=update_offer_1_info_form)
 
     with offer_2_container:
@@ -2021,10 +2023,10 @@ def main():
                 offer_2_pre_occupancy_col1, offer_2_pre_occupancy_col2 = st.columns(2)
                 with offer_2_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_2_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
-                              key='offer_2_pre_occupancy_credit_to_seller_amt')
                 with offer_2_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_2_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_2_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_2_post_occupancy_col1, offer_2_post_occupancy_col2 = st.columns(2)
@@ -2077,18 +2079,19 @@ def main():
                 offer_3_pre_occupancy_col1, offer_3_pre_occupancy_col2 = st.columns(2)
                 with offer_3_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_3_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
-                              key='offer_3_pre_occupancy_credit_to_seller_amt')
                 with offer_3_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_3_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_3_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_3_post_occupancy_col1, offer_3_post_occupancy_col2 = st.columns(2)
                 with offer_3_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_3_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_3_post_occupancy_cost_to_seller_amt')
                 with offer_3_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_3_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_3_post_occupancy_cost_to_seller_amt')
                 offer_3_submit = st.form_submit_button('Submit Offer 3\'s Information', on_click=update_offer_3_info_form)
 
     with offer_4_container:
@@ -2133,17 +2136,19 @@ def main():
                 offer_4_pre_occupancy_col1, offer_4_pre_occupancy_col2 = st.columns(2)
                 with offer_4_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_4_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_4_pre_occupancy_credit_to_seller_amt')
                 with offer_4_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_4_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_4_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_4_post_occupancy_col1, offer_4_post_occupancy_col2 = st.columns(2)
                 with offer_4_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_4_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_4_post_occupancy_cost_to_seller_amt')
                 with offer_4_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_4_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_4_post_occupancy_cost_to_seller_amt')
                 offer_4_submit = st.form_submit_button('Submit Offer 4\'s Information', on_click=update_offer_4_info_form)
 
     with offer_5_container:
@@ -2188,17 +2193,19 @@ def main():
                 offer_5_pre_occupancy_col1, offer_5_pre_occupancy_col2 = st.columns(2)
                 with offer_5_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_5_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_5_pre_occupancy_credit_to_seller_amt')
                 with offer_5_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_5_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_5_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_5_post_occupancy_col1, offer_5_post_occupancy_col2 = st.columns(2)
                 with offer_5_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_5_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_5_post_occupancy_cost_to_seller_amt')
                 with offer_5_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_5_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_5_post_occupancy_cost_to_seller_amt')
                 offer_5_submit = st.form_submit_button('Submit Offer 5\'s Information', on_click=update_offer_5_info_form)
 
     with offer_6_container:
@@ -2243,17 +2250,19 @@ def main():
                 offer_6_pre_occupancy_col1, offer_6_pre_occupancy_col2 = st.columns(2)
                 with offer_6_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_6_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_6_pre_occupancy_credit_to_seller_amt')
                 with offer_6_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_6_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_6_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_6_post_occupancy_col1, offer_6_post_occupancy_col2 = st.columns(2)
                 with offer_6_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_6_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_6_post_occupancy_cost_to_seller_amt')
                 with offer_6_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_6_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_6_post_occupancy_cost_to_seller_amt')
                 offer_6_submit = st.form_submit_button('Submit Offer 6\'s Information', on_click=update_offer_6_info_form)
 
     with offer_7_container:
@@ -2298,17 +2307,19 @@ def main():
                 offer_7_pre_occupancy_col1, offer_7_pre_occupancy_col2 = st.columns(2)
                 with offer_7_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_7_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_7_pre_occupancy_credit_to_seller_amt')
                 with offer_7_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_7_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_7_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_7_post_occupancy_col1, offer_7_post_occupancy_col2 = st.columns(2)
                 with offer_7_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_7_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_7_post_occupancy_cost_to_seller_amt')
                 with offer_7_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_7_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_7_post_occupancy_cost_to_seller_amt')
                 offer_7_submit = st.form_submit_button('Submit Offer 7\'s Information', on_click=update_offer_7_info_form)
 
     with offer_8_container:
@@ -2353,17 +2364,19 @@ def main():
                 offer_8_pre_occupancy_col1, offer_8_pre_occupancy_col2 = st.columns(2)
                 with offer_8_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_8_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_8_pre_occupancy_credit_to_seller_amt')
                 with offer_8_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_8_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_8_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_8_post_occupancy_col1, offer_8_post_occupancy_col2 = st.columns(2)
                 with offer_8_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_8_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_8_post_occupancy_cost_to_seller_amt')
                 with offer_8_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_8_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_8_post_occupancy_cost_to_seller_amt')
                 offer_8_submit = st.form_submit_button('Submit Offer 8\'s Information', on_click=update_offer_8_info_form)
 
     with offer_9_container:
@@ -2408,17 +2421,19 @@ def main():
                 offer_9_pre_occupancy_col1, offer_9_pre_occupancy_col2 = st.columns(2)
                 with offer_9_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_9_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_9_pre_occupancy_credit_to_seller_amt')
                 with offer_9_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_9_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_9_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_9_post_occupancy_col1, offer_9_post_occupancy_col2 = st.columns(2)
                 with offer_9_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_9_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_9_post_occupancy_cost_to_seller_amt')
                 with offer_9_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_9_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_9_post_occupancy_cost_to_seller_amt')
                 offer_9_submit = st.form_submit_button('Submit Offer 9\'s Information', on_click=update_offer_9_info_form)
 
     with offer_10_container:
@@ -2463,17 +2478,19 @@ def main():
                 offer_10_pre_occupancy_col1, offer_10_pre_occupancy_col2 = st.columns(2)
                 with offer_10_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_10_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_10_pre_occupancy_credit_to_seller_amt')
                 with offer_10_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_10_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_10_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_10_post_occupancy_col1, offer_10_post_occupancy_col2 = st.columns(2)
                 with offer_10_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_10_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_10_post_occupancy_cost_to_seller_amt')
                 with offer_10_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_10_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_10_post_occupancy_cost_to_seller_amt')
                 offer_10_submit = st.form_submit_button('Submit Offer 10\'s Information', on_click=update_offer_10_info_form)
 
     with offer_11_container:
@@ -2518,17 +2535,19 @@ def main():
                 offer_11_pre_occupancy_col1, offer_11_pre_occupancy_col2 = st.columns(2)
                 with offer_11_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_11_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_11_pre_occupancy_credit_to_seller_amt')
                 with offer_11_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_11_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_11_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_11_post_occupancy_col1, offer_11_post_occupancy_col2 = st.columns(2)
                 with offer_11_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_11_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_11_post_occupancy_cost_to_seller_amt')
                 with offer_11_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_11_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_11_post_occupancy_cost_to_seller_amt')
                 offer_11_submit = st.form_submit_button('Submit Offer 11\'s Information', on_click=update_offer_11_info_form)
 
     with offer_12_container:
@@ -2573,17 +2592,19 @@ def main():
                 offer_12_pre_occupancy_col1, offer_12_pre_occupancy_col2 = st.columns(2)
                 with offer_12_pre_occupancy_col1:
                     st.checkbox('Pre Occupancy Request', key='offer_12_pre_occupancy_request')
-                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1, key='offer_12_pre_occupancy_credit_to_seller_amt')
                 with offer_12_pre_occupancy_col2:
                     st.date_input('Pre Occupancy Date', key='offer_12_update_pre_occupancy_date')
+                    st.number_input('Pre Occupancy Credit to Seller ($)', 0, 25000, step=1,
+                                    key='offer_12_pre_occupancy_credit_to_seller_amt')
                 st.write('---')
                 st.write('Post Occupancy')
                 offer_12_post_occupancy_col1, offer_12_post_occupancy_col2 = st.columns(2)
                 with offer_12_post_occupancy_col1:
                     st.checkbox('Post Occupancy Request', key='offer_12_post_occupancy_request')
-                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1, key='offer_12_post_occupancy_cost_to_seller_amt')
                 with offer_12_post_occupancy_col2:
                     st.date_input('Post Occupancy Date', key='offer_12_update_post_occupancy_date')
+                    st.number_input('Post Occupancy Cost to Seller ($)', 0, 25000, step=1,
+                                    key='offer_12_post_occupancy_cost_to_seller_amt')
                 offer_12_submit = st.form_submit_button('Submit Offer 12\'s Information', on_click=update_offer_12_info_form)
 
     # st.write(st.session_state)
